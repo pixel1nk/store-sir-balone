@@ -46,12 +46,19 @@ h1, h2 {
 }
 
 h1 {
+    font-size: clamp(1.5rem, 10vw, 3rem); 
     background-color: #f4ff8a;
     color: #4a1c73;
 }
 
 h2 {
-    font-size: clamp(100%, 2rem + 4vw, 32px);
+    font-size: clamp(1.5rem, 10vw, 2rem);
+    background-color: #383afe;
+    color: #fff;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 .collection-items {
