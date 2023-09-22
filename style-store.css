@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 80%;
     margin: 0 auto;
     max-width: 1080px;
 }
@@ -62,10 +61,11 @@ h1 {
 }
 
 .collection-item {
-    border-bottom: 3px solid #8300E9;
-    padding-bottom: 60px;
+  /*   border-bottom: 3px solid #8300E9;
+    padding-bottom: 60px; */
     text-align: center;
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
 }
 
 .collection-item img{
