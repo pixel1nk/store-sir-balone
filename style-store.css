@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "agenda", sans-serif;
     margin: 0;
@@ -16,7 +20,17 @@ header {
     width: 80%;
 }
 
+img {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    display: block;
+}
 
+hr {
+    height: 50px;
+    border: none;
+}
 
 .social-icons {
     display: flex;
@@ -25,7 +39,6 @@ header {
 
 .logo img{
     width: 100px;
-    background-color: #333;
     color: white;
     display: flex;
     justify-content: center;
@@ -61,6 +74,13 @@ h3 {
     font-weight: 400;
 }
 
+h3.blue {
+    font-size: clamp(1.5rem, 10vw, 2rem);
+    color: #383afe;
+    text-align: center;
+    font-weight: bold;
+}
+
 .collection-items {
     display: flex;
     gap: 20px;
@@ -79,3 +99,132 @@ h3 {
 .collection-item img{
     width: 100%;
 }
+
+.texty-text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texty-text p {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    font-weight: 300;
+    color: #292929;
+}
+
+.info-fucsia {
+    border-left: 10px solid #ed1e79;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+.info-blue {
+    border-left: 10px solid #383afe;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+.info-yellow {
+    border-left: 10px solid #f4ff8a;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.info-purple {
+    border-left: 10px solid #4a1c73;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.high-yellow {
+    background-color: #f4ff8a;
+    color: #4a1c73;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.purple-header {
+    color: #fff;
+    background-color: #4a1c73;
+    padding: 10px;
+}
+
+.purple-header h3{
+    font-size: clamp(1.5rem, 10vw, 2rem);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.purple-header p {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* Estilos de los breadcrumbs */
+
+nav {
+    padding-left: 20px;
+    margin: 0 auto;
+
+}
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs li {
+    display: inline;
+    color: #4a1c73;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: " | ";
+    margin: 0 5px;
+    color: #383afe; /* Color del separador */
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #383afe; /* Color de los enlaces */
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Styles for the Back to Top button */
+
+.back-to-top {
+    background-color: deeppink;
+    text-decoration: none;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    z-index: 999;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 100%;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+  }
+  .back-to-top:hover {
+    background-color: #ff51af;
+  }
+  .back-to-top:active {
+    box-shadow: none;
+    background-color: #d60074;
+  }
+  .back-to-top svg.icon__arrow-up {
+    fill: white;
+    width: 32px;
+    height: 32px;
+  }
+  
+ 
