@@ -99,7 +99,10 @@ h3.blue {
 .collection-item img{
     width: 100%;
 }
-
+img.one-stat {
+    width: 50%;
+    max-width: 380px;
+}
 .texty-text {
     width: 90%;
     margin: 0 auto;
