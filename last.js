@@ -1,4 +1,6 @@
 document.write(`
+<h2>Don't forget our products for informed fans</h2>
+<hr>
 <div class="collection-items">
         <div class="collection-item">
             <h3>Data Speaks <br>(Free)</h3>
@@ -10,4 +12,5 @@ document.write(`
             <a href="https://mail.sirbalone.com/products/data-speaks-pro?promo=DATA10"><img src="https://sirbalone.com/img/data-speaks-pro.png" alt="Weekly reports premium suscription"></a>
         </div>
     </div>
+    <hr>
 `);
