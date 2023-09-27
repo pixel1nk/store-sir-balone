@@ -39,6 +39,15 @@ footer .legal-links a {
     color:#4a1c73
 }
 
+@media (min-width: 300px) and (max-width: 567px) {
+    footer {
+        flex-direction: column;
+    } 
+    footer .legal-links {
+        margin-top: 15px;
+    }
+}
+
 img {
     margin: 0 auto;
     max-width: 800px;
@@ -118,6 +127,7 @@ h3.blue {
 .collection-item img{
     width: 100%;
 }
+
 img.one-stat {
     width: 50%;
     max-width: 380px;
