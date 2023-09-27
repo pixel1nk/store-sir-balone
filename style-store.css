@@ -209,7 +209,7 @@ nav {
     z-index: 999;
     position: fixed;
     right: 32px;
-    bottom: 32px;
+    bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,4 +230,96 @@ nav {
     height: 32px;
   }
   
- 
+ /* Establece el estilo inicial del elemento */
+.barra-suscripcion {
+    height: 80px;
+    background-color:rgba(0,0,255,0.5);
+    opacity: 0; /* El elemento está inicialmente oculto */
+    animation: aparecer 1s linear 1s forwards; /* Animación infinita */
+    position: fixed;
+    bottom: 0; /* Lo coloca en la parte inferior */
+    left: 0; /* Lo coloca en la parte izquierda */
+    width: 100%; /* Ocupa el 50% del ancho de la pantalla */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    
+  }
+
+  .barra-suscripcion a {
+    padding: 15px 20px;
+    font: 13px "agenda", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 1em;
+    
+  }
+
+  .barra-suscripcion a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 300px) and (max-width: 567px) {
+
+    .barra-suscripcion{
+        width: 100%;
+        height: auto;
+        
+    }
+    .barra-suscripcion a {
+      padding: 4px 1px;
+      font: 12px "agenda", sans-serif;
+      margin: 10px 10px 5px 10px;
+    }
+  }
+
+
+  @media (min-width: 568px) {
+    .barra-suscripcion a {
+      padding: 15px 50px;
+      font: 16px "agenda", sans-serif;
+      
+    }
+  }
+  .button1 {
+    color: rgb(122, 8, 8);
+    background-color: #ffbf10;
+    transition: 0.2s ease-in-out;
+    border-left: 3px transparent solid;
+    border-right: 3px transparent solid;
+  }
+  
+  .button1:hover {
+    color: #ffbf10;
+    background-color: black;
+    border-left: #ffbf10 3px solid;
+    border-right: #ffbf10 3px solid;
+  }
+  
+  .button2 {
+    color: black;
+    background-color: #10ffb4;
+    transition: 0.2s ease-in-out;
+    border-left: 3px transparent solid;
+    border-right: 3px transparent solid;
+  }
+  
+  .button2:hover {
+    color: #10ffb4;
+    background-color: black;
+    border-left: #10ffb4 3px solid;
+    border-right: #10ffb4 3px solid;
+  }
+
+
+  
+  /* Define la animación para hacer que el elemento aparezca y desaparezca */
+  @keyframes aparecer {
+    to {
+      opacity: 1; /* Cambia la opacidad a 1 para mostrar el elemento */
+    }
+  }
