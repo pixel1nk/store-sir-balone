@@ -20,6 +20,25 @@ header {
     width: 80%;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: #4a1c73 10px solid;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .legal-links a {
+    margin: 0 10px ;
+    color:#4a1c73
+}
+
 img {
     margin: 0 auto;
     max-width: 800px;
@@ -103,6 +122,12 @@ img.one-stat {
     width: 50%;
     max-width: 380px;
 }
+
+img.simple-stat {
+    width: 80%;
+    max-width: 600px;
+}
+
 .texty-text {
     width: 90%;
     margin: 0 auto;
@@ -232,12 +257,12 @@ nav {
   
  /* Establece el estilo inicial del elemento */
 .barra-suscripcion {
-    height: 80px;
+    height: auto;
     background-color:rgba(0,0,255,0.5);
     opacity: 0; /* El elemento está inicialmente oculto */
-    animation: aparecer 1s linear 1s forwards; /* Animación infinita */
+    animation: aparecer 1s linear 30s forwards; /* Animación infinita */
     position: fixed;
-    bottom: 0; /* Lo coloca en la parte inferior */
+    top: 0; /* Lo coloca en la parte inferior */
     left: 0; /* Lo coloca en la parte izquierda */
     width: 100%; /* Ocupa el 50% del ancho de la pantalla */
     display: flex;
@@ -248,14 +273,14 @@ nav {
   }
 
   .barra-suscripcion a {
-    padding: 15px 20px;
+    padding: 4px 1px;
     font: 13px "agenda", sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    margin: 1em;
+    margin: 0.5em;
     
   }
 
@@ -280,7 +305,7 @@ nav {
 
   @media (min-width: 568px) {
     .barra-suscripcion a {
-      padding: 15px 50px;
+      padding: 5px 50px;
       font: 16px "agenda", sans-serif;
       
     }
