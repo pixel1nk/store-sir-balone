@@ -128,6 +128,23 @@ h3.blue {
     width: 100%;
 }
 
+a.link-seccion {
+    display: inline-block; /* Para que el enlace ocupe solo el ancho del contenido */
+    padding: 10px 20px; /* Ajusta el espaciado interno para el botón */
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: 1px solid #007BFF; /* Borde del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el mouse */
+
+}
+
+a:hover.link-seccion {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+  color: #fff; /* Cambia el color del texto en el hover */
+}
+
 img.one-stat {
     width: 50%;
     max-width: 380px;

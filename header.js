@@ -1,5 +1,5 @@
 document.write(`
-<div class="logo"><img src="https://sirbalone.com/img/sir-balone-logo.png" alt="Logo Sir Balone"></div>
+<div class="logo"><a href="https://sirbalone.com"><img src="https://sirbalone.com/img/sir-balone-logo.png" alt="Logo Sir Balone"></a></div>
         <div class="social-icons">
             <a href="https://www.youtube.com/channel/UCLuVSIGxrTOp_0ZKiM1B-fA" target="_blank"><img src="https://sirbalone.com/img/youtube-icon.png" alt="YouTube"></a>
             <a href="https://www.tiktok.com/@sirbalone" target="_blank"><img src="https://sirbalone.com/img/tiktok-icon.png" alt="TikTok"></a>
