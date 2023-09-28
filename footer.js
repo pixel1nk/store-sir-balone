@@ -7,8 +7,8 @@ document.write(`
         <a href="https://sirbalone.com/es/inicio" target="_blank"><img src="https://sirbalone.com/img/es-lang.png" alt="Sitio en Español" title="Sitio en Español"></a>
     </div>
     <div class="legal-links">
-        <a href="https://sirbalone.com/privacy.html" target="_blank">Privacy Policy</a>
-        <a href="https://sirbalone.com/copyright.html" target="_blank">Copyright</a>
-        <a href="https://sirbalone.com/contact.html" target="_blank">Contact</a>
+        <a href="https://sirbalone.com/privacy.html" target="_self">Privacy Policy</a>
+        <a href="https://sirbalone.com/copyright.html" target="_self">Copyright</a>
+        <a href="https://sirbalone.com/contact.html" target="_self">Contact</a>
     </div>
 `);
