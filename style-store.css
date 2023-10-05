@@ -375,3 +375,62 @@ nav {
       opacity: 1; /* Cambia la opacidad a 1 para mostrar el elemento */
     }
   }
+
+
+  /*/ TABLA STATS */
+  .stats-table {
+    text-align: center;
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    border-spacing: 0;
+  }
+
+  .stats-table img {
+    width: 50px;
+  }
+
+ 
+  .stats-table tbody tr td:nth-child(2){
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .stats-table tbody tr td:nth-child(3){
+    font-weight: 300;
+    border-bottom: #f4ff8a solid 5px;
+  }
+  .stats-table tbody tr td:nth-child(4){
+    font-weight: 500;
+    border-bottom: #f4ff8a solid 5px;
+    background-color: #f4ff8a;
+    color: #4a1c73;
+  }
+  .stats-table tbody tr td:nth-child(5){
+    font-weight: 500;
+    border-bottom: #383afe solid 5px;
+    color: #383afe;
+  }
+
+  .stats-table tbody tr td:nth-child(6){
+    font-weight: 500;
+    border-bottom: #4a1c73 solid 5px;
+    color: #4a1c73;
+  }
+
+  .stats-table tbody tr td:nth-child(7){
+    font-weight: 500;
+    border-bottom: #ed1e79 solid 5px;
+    color: #ed1e79;
+  }
+
+  .stats-table tbody tr:first-child td {
+    border: none;
+    font-weight: 600;
+    background-color: #fff;
+    height: 100px;
+    width: 10%;
+    padding: 0 2%;
+  }
+
+  .stats-table tbody tr:nth-child(6) td:nth-child(2),
+  .stats-table tbody tr:nth-child(11) td:nth-child(2) {
+    border-bottom: #f0f0f0 solid 5px;
+  }
