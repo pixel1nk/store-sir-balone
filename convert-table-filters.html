@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla con Filtros</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.6/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.0.6/js/tabulator.min.js"></script>
+</head>
+<body>
+    <h1>Tabla con Filtros</h1>
+    <textarea id="tablaHTML" rows="10" cols="50" placeholder="Pega la tabla HTML aquí"></textarea>
+    <br>
+    <button id="generarTabla">Generar Tabla</button>
+    <br>
+    <div id="controlesFiltros">
+        <!-- Controles de filtro se agregarán aquí dinámicamente -->
+    </div>
+    <br>
+    <div id="tablaContainer"></div> <!-- Contenedor donde se generará la tabla -->
+
+    <script>
+        document.getElementById("generarTabla").addEventListener("click", function() {
+            var tablaHTML = document.getElementById("tablaHTML").value;
+            var tablaContainer = document.getElementById("tablaContainer");
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(tablaHTML, 'text/html');
+
+            // Limpiar el contenedor de la tabla antes de generar una nueva tabla
+            tablaContainer.innerHTML = "";
+
+            // Crear una nueva tabla dentro del contenedor
+            var table = document.createElement("table");
+            table.id = "miTabla";
+            tablaContainer.appendChild(table);
+
+            // Inicializar Tabulator en la tabla HTML generada
+            var table = new Tabulator("#miTabla", {
+                layout: "fitColumns",
+                responsiveLayout: "hide",
+                columns: [], // Las columnas se definirán automáticamente
+                data: [], // Los datos se definirán automáticamente
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
