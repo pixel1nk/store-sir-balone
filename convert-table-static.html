@@ -28,14 +28,16 @@
                 var columnas = filas[i].split('\t');
                 
                 // Genera el nombre de la imagen
-                var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-');
+                var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
                 
                 // Agrega la columna de la imagen
                 tablaHTML += '<td><img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy"></td>';
                 
                 // Agrega las demás columnas
                 for (var j = 0; j < columnas.length; j++) {
-                    tablaHTML += '<td>' + columnas[j] + '</td>';
+                    // Utiliza una expresión regular para eliminar lo que está antes de un punto y un espacio
+                    var textoColumna = columnas[j].replace(/^[^.]*\.\s*/, '');
+                    tablaHTML += '<td>' + textoColumna + '</td>';
                 }
                 tablaHTML += '</tr>';
             }
