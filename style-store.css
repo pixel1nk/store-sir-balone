@@ -390,24 +390,29 @@ nav {
 }
   .stats-table {
     text-align: center;
-    font-size: clamp(1.2rem, 2.5vw, 1rem);
-    border-spacing: 0;
+    font-size: clamp(1.8rem, 2.5vw, 1rem);
+    border-spacing: 0 30px;
     
   }
 
   .stats-table img {
-    width: 50px;
+    width: 100px;
   }
 
   .stats-table tbody tr td {
     vertical-align: bottom;
   }
+  .stats-table tbody tr td:nth-child(1){
+    width: 80px;
+  }
   .stats-table tbody tr td:nth-child(2){
     font-weight: 300;
     font-size: 14px;
+    border: white solid 5px;
   }
   .stats-table tbody tr td:nth-child(3){
     font-weight: 300;
+    border: transparent solid 5px;
     border-bottom: #f4ff8a solid 5px;
     
   }
@@ -440,11 +445,7 @@ nav {
     font-weight: 400;
     background-color: #fff;
     height: 100px;
-    width: 10%;
     padding: 0 2%;
   }
 
-  .stats-table tbody tr:nth-child(6) td:nth-child(2),
-  .stats-table tbody tr:nth-child(11) td:nth-child(2) {
-    border-bottom: #f0f0f0 solid 5px;
-  }
+ 
