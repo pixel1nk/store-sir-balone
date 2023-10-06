@@ -8,6 +8,4 @@
 /reports/europe/season-23-24 /reports/europe/season-23-24/season-23-24.html 200
 /reports/europe/season-22-23 /reports/europe/season-22-23/season-22-23.html 200
 
-/es /es/inicio.html 200
-
-/reportes/* /reports 200
+/es/* https://sirbalone.com/reports/ 200
