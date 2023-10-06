@@ -401,6 +401,7 @@ nav {
 
   .stats-table tbody tr td {
     vertical-align: bottom;
+    height: 100px;
   }
   .stats-table tbody tr td:nth-child(1){
     width: 80px;
