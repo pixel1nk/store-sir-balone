@@ -3,6 +3,7 @@
 <head>
     <title>Convertir Tabla a HTML</title>
     <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
+    <link rel="stylesheet" href="https://sirbalone.com/style-store.css">
 </head>
 <body>
     <h1>Convertir Tabla a HTML</h1>
@@ -10,43 +11,89 @@
     <br>
     <button onclick="convertirTabla()">Convertir a HTML</button>
     <br>
+    <textarea id="codigoHTML" rows="10" cols="50"></textarea>
     <div id="resultadoHTML" class="table-cont"></div>
 
     <script>
         function convertirTabla() {
-            // Obtén el contenido del campo de texto
-            var tablaTexto = document.getElementById("tablaTexto").value;
-            
-            // Divide el contenido en filas
-            var filas = tablaTexto.split('\n');
-            
-            // Genera el código HTML de la tabla
-            var tablaHTML = '<table class="stats-table">';
-            for (var i = 0; i < filas.length; i++) {
-                tablaHTML += '<tr>';
-                
-                // Divide cada fila en columnas
-                var columnas = filas[i].split('\t');
-                
-                // Genera el nombre de la imagen
-                var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
-                
-                // Agrega la columna de la imagen
-                tablaHTML += '<td><img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy"></td>';
-                
-                // Agrega las demás columnas
-                for (var j = 0; j < columnas.length; j++) {
-                    // Utiliza una expresión regular para eliminar lo que está antes de un punto y un espacio
-                    var textoColumna = columnas[j].replace(/^[^.]*\.\s*/, '');
-                    tablaHTML += '<td>' + textoColumna + '</td>';
-                }
-                tablaHTML += '</tr>';
-            }
-            tablaHTML += '</table>';
-            
-            // Muestra el resultado en el elemento "resultadoHTML"
-            document.getElementById("resultadoHTML").innerHTML = tablaHTML;
+    // Obtén el contenido del campo de texto
+    var tablaTexto = document.getElementById("tablaTexto").value;
+
+    // Divide el contenido en filas
+    var filas = tablaTexto.split('\n');
+
+    // Genera el código HTML de la tabla
+    var tablaHTML = '<table class="stats-table">';
+    for (var i = 0; i < filas.length; i++) {
+        tablaHTML += '<tr>';
+
+        // Divide cada fila en columnas
+        var columnas = filas[i].split('\t');
+
+        // Agrega la columna de la imagen
+        tablaHTML += '<td>';
+        if (i >= 1 && i <= 5) { // Verifica si la fila está entre la 2 y la 6 (inclusive)
+            var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
+            tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy">';
         }
-    </script>
+        tablaHTML += '</td>';
+
+        // Agrega las columnas restantes
+        for (var j = 0; j < columnas.length; j++) {
+            // Utiliza una expresión regular para eliminar lo que está antes de un punto y un espacio
+            var textoColumna = columnas[j].replace(/^[^.]*\.\s*/, '');
+
+            // Si es la segunda columna (índice 1) y la fila no es la primera (índice 0), agrega <br> y combina con la primera columna
+            if (j === 1 && i > 0) {
+                tablaHTML += '<td>' + textoColumna + '<br>' + columnas[0] + '</td>';
+            } else {
+                tablaHTML += '<td>' + textoColumna + '</td>';
+            }
+        }
+        
+        tablaHTML += '</tr>';
+    }
+    
+    tablaHTML += '</table>';
+
+
+
+
+    // Muestra la tabla renderizada en el elemento "resultadoHTML"
+    document.getElementById("resultadoHTML").innerHTML = tablaHTML;
+
+        // Encuentra todos los elementos td de la segunda columna (índice 1) y elimínalos
+    var segundaColumna = document.querySelectorAll('.stats-table tbody tr td:nth-child(2)');
+    segundaColumna.forEach(function(element) {
+        element.remove();
+    });
+
+    // Obtén el elemento que contiene la tabla
+    var tablaContenedor = document.getElementById("resultadoHTML");
+
+    // Obtén el código HTML de la tabla
+    var codigoHTMLTabla = tablaContenedor.innerHTML;
+
+    // Muestra el código HTML generado en el elemento "codigoHTML"
+    document.getElementById("codigoHTML").value = codigoHTMLTabla;
+
+        // Obtén el elemento del textarea
+    var textarea = document.getElementById("codigoHTML");
+
+    // Agrega un evento click al textarea
+    textarea.addEventListener("click", function() {
+        // Selecciona todo el texto en el textarea
+    textarea.select();
+
+    // Copia el texto seleccionado al portapapeles
+    document.execCommand("copy");
+
+    // Deselecciona el texto para que no quede resaltado
+    textarea.setSelectionRange(0, 0);
+
+});
+}   
+
+    </script>    
 </body>
 </html>
