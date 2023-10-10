@@ -166,6 +166,15 @@ img.simple-stat {
     color: #292929;
 }
 
+.texty-text h4 {
+  font-size: clamp(1.4rem, 2.5vw, 1rem);
+  font-weight: 500;
+  color: #383afe;
+  border: #383afe solid 3px;
+  text-align: center;
+  padding: 20px;
+}
+
 .info-fucsia {
     border-left: 10px solid #ed1e79;
     padding: 0 10px;
@@ -381,17 +390,33 @@ nav {
 
   .table-cont {
     overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
-    max-width: 100%; /* Evita que la tabla sea más ancha que la ventana gráfica */
+    max-width: 50%; /* Evita que la tabla sea más ancha que la ventana gráfica */
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.table-odds {
+  overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
+  max-width: 100%; /* Evita que la tabla sea más ancha que la ventana gráfica */
 }
 
 .table-cont table {
-   min-width: 800px; /* Establece el ancho mínimo de 600px */
+  
+   min-width: 400px; /* Establece el ancho mínimo de 600px */
    
+}
+
+.table-odds table {
+  
+  min-width: 800px; /* Establece el ancho mínimo de 600px */
+  
 }
   .stats-table {
     text-align: center;
     font-size: clamp(1.8rem, 2.5vw, 1rem);
     border-spacing: 0 30px;
+    width: 100%;
+    min-width: 800px;
     
   }
 
@@ -405,15 +430,20 @@ nav {
   .stats-table tbody tr td:nth-child(1){
     width: 80px;
   }
+  .stats-table tbody tr:nth-child(n+7) td {
+    font-size: clamp(1.4rem, 2.5vw, 1rem);
+  }
+  
    .stats-table tbody tr td:nth-child(2) span.team {
-    font-weight: 300;
-    font-size: 14px;
-    border: white solid 5px;
+    font-weight: 200;
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
   } 
+
   .stats-table tbody tr td:nth-child(2){
     font-weight: 300;
     border: transparent solid 5px;
     border-bottom: #f4ff8a solid 5px;
+    color: #4a1c73;
     
   }
   .stats-table tbody tr td:nth-child(3){
@@ -450,3 +480,38 @@ nav {
   }
 
  
+/*/ TABLA ODDS */
+
+.table-odds .stats-table tbody tr td:nth-child(5){
+  font-weight: 500;
+  border-bottom: #f4ff8a solid 5px;
+  background-color: #f4ff8a;
+  color: #4a1c73;
+}
+.table-odds .stats-table tbody tr td:nth-child(6){
+  font-weight: 500;
+  border-bottom: #383afe solid 5px;
+  color: #383afe;
+}
+
+.table-odds .stats-table tbody tr td:nth-child(4){
+  font-weight: 500;
+  border-bottom: #4a1c73 solid 5px;
+  color: #4a1c73;
+}
+
+.table-odds .stats-table tbody tr td:nth-child(3){
+  font-weight: 500;
+  border-bottom: #ed1e79 solid 5px;
+  color: #ed1e79;
+  background-color: #fff;
+}
+
+.table-odds .stats-table tbody tr:first-child td {
+  font-size: clamp(1.2rem, 2.5vw, 1rem);
+  border: none;
+  font-weight: 400;
+  background-color: #fff;
+  height: 100px;
+  padding: 0 2%;
+}
