@@ -399,43 +399,42 @@ nav {
     width: 100px;
   }
 
-  .stats-table tbody tr:nth-child(-n+5) td {
-    vertical-align: bottom;
+  .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
     height: 100px;
   }
   .stats-table tbody tr td:nth-child(1){
     width: 80px;
   }
-  .stats-table tbody tr td:nth-child(2){
+   .stats-table tbody tr td:nth-child(2) span.team {
     font-weight: 300;
     font-size: 14px;
     border: white solid 5px;
-  }
-  .stats-table tbody tr td:nth-child(3){
+  } 
+  .stats-table tbody tr td:nth-child(2){
     font-weight: 300;
     border: transparent solid 5px;
     border-bottom: #f4ff8a solid 5px;
     
   }
-  .stats-table tbody tr td:nth-child(4){
+  .stats-table tbody tr td:nth-child(3){
     font-weight: 500;
     border-bottom: #f4ff8a solid 5px;
     background-color: #f4ff8a;
     color: #4a1c73;
   }
-  .stats-table tbody tr td:nth-child(5){
+  .stats-table tbody tr td:nth-child(4){
     font-weight: 500;
     border-bottom: #383afe solid 5px;
     color: #383afe;
   }
 
-  .stats-table tbody tr td:nth-child(6){
+  .stats-table tbody tr td:nth-child(5){
     font-weight: 500;
     border-bottom: #4a1c73 solid 5px;
     color: #4a1c73;
   }
 
-  .stats-table tbody tr td:nth-child(7){
+  .stats-table tbody tr td:nth-child(6){
     font-weight: 500;
     border-bottom: #ed1e79 solid 5px;
     color: #ed1e79;
