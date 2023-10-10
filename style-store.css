@@ -168,10 +168,10 @@ img.simple-stat {
 }
 
 .texty-text h4 {
-  font-size: clamp(1.4rem, 2.5vw, 1rem);
-  font-weight: 500;
+  font-size: clamp(1.8rem, 2.5vw, 1rem);
+  font-weight: 600;
   color: #383afe;
-  border: #383afe solid 3px;
+  border: #383afe solid 5px;
   text-align: center;
   padding: 20px;
 }
@@ -212,14 +212,14 @@ img.simple-stat {
 }
 
 .purple-header h3{
-    font-size: clamp(1.5rem, 10vw, 2rem);
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
     color: #fff;
     text-align: center;
     font-weight: bold;
 }
 
 .purple-header p {
-    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
     font-weight: 300;
     text-align: center;
 }
@@ -258,6 +258,34 @@ nav {
     text-decoration: underline;
 }
 
+/* Styles for section navigation buttons */
+
+.btns-prev-next {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  width: 50px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: #dfdfdf; /* Color de la flecha */
+  font-size: 40px; /* Tamaño de la flecha */
+  cursor: pointer;
+}
+
+/* Flecha hacia arriba */
+.nav-button[data-direction="prev"]::before {
+  content: '\25B2'; /* Carácter Unicode de la flecha hacia arriba (▲) */
+}
+
+/* Flecha hacia abajo */
+.nav-button[data-direction="next"]::before {
+  content: '\25BC'; /* Carácter Unicode de la flecha hacia abajo (▼) */
+}
 
 
 /* Styles for the Back to Top button */
@@ -436,12 +464,14 @@ nav {
   }
   
    .stats-table tbody tr td:nth-child(2) span.team {
-    font-weight: 200;
-    font-size: clamp(0.5rem, 2.5vw, 1rem);
+    font-weight: 300;
+    font-size: clamp(1rem, 2.5vw, 0.1rem);
+    color: #645b7d;
+    border-top: #cac6d6 solid 2px;
   } 
 
   .stats-table tbody tr td:nth-child(2){
-    font-weight: 300;
+    font-weight: 400;
     border: transparent solid 5px;
     border-bottom: #f4ff8a solid 5px;
     color: #4a1c73;
