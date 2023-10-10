@@ -399,7 +399,7 @@ nav {
     width: 100px;
   }
 
-  .stats-table tbody tr td {
+  .stats-table tbody tr:nth-child(-n+5) td {
     vertical-align: bottom;
     height: 100px;
   }
