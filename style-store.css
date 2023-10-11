@@ -228,7 +228,7 @@ img.simple-stat {
 /* Estilos de los breadcrumbs */
 
 nav {
-    padding: 0 20px;
+    padding: 0;
     margin: 0 auto;
 
 }
@@ -456,9 +456,22 @@ nav {
   .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
     height: 100px;
   }
+  
+/*  Borde a primeras cinco imagenes */
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
+    border: #f4ff8a solid 5px;
+  }
+
+  .stats-table tbody tr::nth-child(n+7) td:first-child img {
+    filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+  }
+
   .stats-table tbody tr td:nth-child(1){
     width: 80px;
   }
+
   .stats-table tbody tr:nth-child(n+7) td {
     font-size: clamp(1.4rem, 2.5vw, 1rem);
   }
@@ -504,45 +517,170 @@ nav {
   .stats-table tbody tr:first-child td {
     font-size: clamp(1.2rem, 2.5vw, 1rem);
     border: none;
+    font-weight: 500;
+    background-color: #fcce4f;
+    height: 10px;
+    padding: 10px 2%;
+  }
+  
+  .stats-table tbody tr:nth-child(2) td {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    border: none;
     font-weight: 400;
     background-color: #fff;
-    height: 100px;
+    height: 10px;
     padding: 0 2%;
   }
 
  
 /*/ TABLA ODDS */
-
-.table-odds .stats-table tbody tr td:nth-child(5){
-  font-weight: 500;
-  border-bottom: #f4ff8a solid 5px;
-  background-color: #f4ff8a;
-  color: #4a1c73;
-}
-.table-odds .stats-table tbody tr td:nth-child(6){
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(6){
   font-weight: 500;
   border-bottom: #383afe solid 5px;
+}
+.table-odds .stats-table tbody tr td:nth-child(6) {
   color: #383afe;
 }
 
-.table-odds .stats-table tbody tr td:nth-child(4){
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(5){
   font-weight: 500;
-  border-bottom: #4a1c73 solid 5px;
+  border-bottom: #f4ff8a solid 5px;
+  background-color: #f4ff8a;
+  
+}
+.table-odds .stats-table tbody tr td:nth-child(5), .table-odds .stats-table tbody tr td:nth-child(4) {
   color: #4a1c73;
 }
 
-.table-odds .stats-table tbody tr td:nth-child(3){
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(4){
   font-weight: 500;
-  border-bottom: #ed1e79 solid 5px;
-  color: #ed1e79;
-  background-color: #fff;
+  border-bottom: #4a1c73 solid 5px;
 }
 
-.table-odds .stats-table tbody tr:first-child td {
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(3){
+  font-weight: 500;
+  border-bottom: #ed1e79 solid 5px;
+ 
+  background-color: #fff;
+}
+.table-odds .stats-table tbody tr td:nth-child(3) {
+  color: #ed1e79;
+}
+
+.stats-table tbody tr:first-child td {
   font-size: clamp(1.2rem, 2.5vw, 1rem);
   border: none;
+  font-weight: 500;
+  background-color: #fcce4f;
+  height: 10px;
+  padding: 10px 2%;
+  border-bottom: transparent;
+}
+
+.stats-table tbody tr:nth-child(2) td {
+  font-size: clamp(1.2rem, 2.5vw, 1rem);
+  border-bottom: transparent solid 5px;
   font-weight: 400;
   background-color: #fff;
-  height: 100px;
+  height: 10px;
   padding: 0 2%;
+}
+
+
+/* Navegador lateral */
+
+#nav-container {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  background: #ececec;
+  padding: 17px;
+  z-index: 999;
+  max-width: 220px;
+}
+
+#navigation {
+  display: block; /* El panel desplegado por defecto */
+}
+
+#toggle-nav {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  color:#383afe;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.vert-nav {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.vert-nav li {
+  list-style: none;
+  
+}
+
+.vert-nav li.list-head {
+  margin-bottom: 10px;
+}
+
+.vert-nav li a {
+  text-decoration: none;
+  color: #4a1c73;
+}
+
+.vert-nav .active-link {
+  color:#d60074; /* Cambia el color según tu preferencia */
+  font-weight: bold; /* Puedes ajustar otros estilos como negrita o subrayado */
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+  
+  .vert-nav li {
+    display: inline;    
+  }
+  
+  .vert-nav li.list-head {    
+    display: block;
+  }
+  
+   
+  .vert-nav li:not(:first-child):not(:last-child)::after {
+    content: " | ";
+    margin: 0 5px;
+    color: #383afe;
+    line-height: 2;
+  }
+}
+  /* Cabecera Seccion con jugadores */
+
+
+div.section-head {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+div.section-head div.players {
+  position: inherit;
+  width: 18%;
+}
+div.section-head div.players p {
+  background-color: #f4ff8a;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    font-size: clamp(1rem, 4.5vw, 2.8rem);
+    font-weight: 500;
+    color: #4a1c73;
+
 }

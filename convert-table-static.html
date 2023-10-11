@@ -33,7 +33,7 @@
 
         // Agrega la columna de la imagen
         tablaHTML += '<td>';
-        if (i >= 2 && i <= 6) { // Verifica si la fila está entre la 2 y la 6 (inclusive)
+        if (i >= 2 && i <= 18) { // Verifica si la fila está entre la 2 y la 6 (inclusive)
             var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
             tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy">';
         }
