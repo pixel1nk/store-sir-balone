@@ -462,7 +462,7 @@ nav {
     border: #f4ff8a solid 5px;
   }
 
-  .stats-table tbody tr::nth-child(n+7) td:first-child img {
+  .stats-table tbody tr:nth-child(n+7) td:first-child img {
     filter: grayscale(100%);
 -webkit-filter: grayscale(100%);
 -moz-filter: grayscale(100%);
