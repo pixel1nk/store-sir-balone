@@ -44,8 +44,8 @@
             // Utiliza una expresión regular para eliminar lo que está antes de un punto y un espacio
             var textoColumna = columnas[j].replace(/^[^.]*\.\s*/, '');
 
-            // Si es la segunda columna (índice 1) y la fila no es la primera (índice 0), agrega <br> y combina con la primera columna
-            if (j === 1 && i > 0) {
+            // Si es la segunda columna (índice 1) y la fila no es la segunda (índice 1), agrega <br> y combina con la primera columna
+            if (j === 1 && i > 1) {
                 tablaHTML += '<td>' + textoColumna + '<br>' + '<span class="team">' + columnas[0] + '</span>' + '</td>';
             } else {
                 tablaHTML += '<td>' + textoColumna + '</td>';
