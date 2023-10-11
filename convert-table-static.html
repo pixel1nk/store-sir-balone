@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Convertir Tabla a HTML</title>
+    <title>Convertir Tabla a HTML q</title>
     <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
     <link rel="stylesheet" href="https://sirbalone.com/style-store.css">
 </head>
@@ -34,8 +34,8 @@
         // Agrega la columna de la imagen
         tablaHTML += '<td>';
         if (i >= 2 && i <= 6) { // Verifica si la fila está entre la 3 y la 7 (inclusive)
-            var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
-            tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy">';
+            var nombreImagen = columnas[2].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
+            tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[2] + '" loading="lazy">';
         }
         tablaHTML += '</td>';
 
