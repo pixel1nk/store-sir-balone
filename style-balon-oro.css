@@ -87,6 +87,10 @@ p {
     margin-bottom: 10px;
 }
 
+.logo img {
+  shape-rendering: auto; /* Prueba diferentes valores como "auto", "geometricPrecision", o "crispEdges" */
+}
+
 .social-icons img {
     width: 30px;
     height: 30px;
