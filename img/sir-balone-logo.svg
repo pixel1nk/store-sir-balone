@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1142.19">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #4a1c72;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke-width: 20px;
+      }
+
+      .cls-4 {
+        font-family: HadsutScript-Regular, 'Hadsut Script';
+        font-size: 283.68px;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="m503.57,230.52l-90.79,139.67c-4.15,6.38-3.71,14.7,1.07,20.61l104.78,129.51c4.78,5.91,12.83,8.07,19.93,5.35l155.55-59.63c7.1-2.72,11.64-9.71,11.25-17.31l-8.65-166.36c-.39-7.6-5.64-14.07-12.98-16.05l-160.89-43.18c-7.35-1.97-15.13,1.01-19.27,7.39Z"/>
+  <path class="cls-2" d="m154.21,676.49c-4.85-38.78,31.17,89.56,131.02,61.31,13.56-3.84,28.29-11.08,37.11-42.42,19.4-68.94,103.15-35.74,103.15-35.74,0,0,40.13-91.74,152.68-52.09,164.48,57.95,286.34-66.61,291.12-307.15.21-10.33,13.93-13.73,18.88-4.66,45.9,84.21,139.1,321.31-144.8,493.71,0,0-135.06,74.95-250.47-17.99,0,0-2.02,150.84-147.26,97.38-66.59-24.51-178.1-85.98-191.42-192.36Z"/>
+  <circle class="cls-3" cx="570.55" cy="372.41" r="80.64"/>
+  <circle class="cls-1" cx="663.2" cy="407.26" r="12.01"/>
+  <text class="cls-4" transform="translate(699.35 1035.44)"><tspan x="0" y="0">Balone</tspan></text>
+  <text class="cls-4" transform="translate(862.13 859.25)"><tspan x="0" y="0">Sir</tspan></text>
+</svg>
