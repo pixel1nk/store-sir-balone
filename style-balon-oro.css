@@ -635,11 +635,22 @@ nav {
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  background: transparent;
   border: #fcce4f71 solid 1px;
   padding: 17px;
   z-index: 999;
   max-width: 220px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  #nav-container {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 10, 10, 0.5);
+  }
+
+  .warning {
+    display: none;
+  }
 }
 
 #navigation {
@@ -674,7 +685,7 @@ nav {
 
 .vert-nav li a {
   text-decoration: none;
-  color: #fefefaad;
+  color: #fefefac9;
 }
 
 .vert-nav .active-link {
@@ -726,4 +737,5 @@ div.section-head div.players p {
     color: #373738;
 
 }
+
 
