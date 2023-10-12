@@ -79,16 +79,12 @@ p {
 } 
 
 .logo img{
-    width: 100px;
+    width: 150px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-}
-
-.logo img {
-  shape-rendering: auto; /* Prueba diferentes valores como "auto", "geometricPrecision", o "crispEdges" */
 }
 
 .social-icons img {
