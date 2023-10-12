@@ -42,7 +42,8 @@ footer div {
 
 footer .legal-links a {
     margin: 0 10px ;
-    color:#373738
+    color:#fcce4f;
+    text-decoration: none;
 }
 section, div, nav {
   max-width: 1080px;
@@ -270,164 +271,7 @@ nav {
 
 .breadcrumbs a:hover {
     text-decoration: underline;
-}
-
-/* Styles for section navigation buttons */
-
-.btns-prev-next {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.nav-button {
-  width: 50px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  color: #dfdfdf; /* Color de la flecha */
-  font-size: 40px; /* Tamaño de la flecha */
-  cursor: pointer;
-}
-
-/* Flecha hacia arriba */
-.nav-button[data-direction="prev"]::before {
-  content: '\25B2'; /* Carácter Unicode de la flecha hacia arriba (▲) */
-}
-
-/* Flecha hacia abajo */
-.nav-button[data-direction="next"]::before {
-  content: '\25BC'; /* Carácter Unicode de la flecha hacia abajo (▼) */
-}
-
-
-/* Styles for the Back to Top button */
-
-.back-to-top {
-    background-color: deeppink;
-    text-decoration: none;
-    cursor: pointer;
-    width: 56px;
-    height: 56px;
-    z-index: 999;
-    position: fixed;
-    right: 32px;
-    bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    border-radius: 100%;
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
-  }
-  .back-to-top:hover {
-    background-color: #ff51af;
-  }
-  .back-to-top:active {
-    box-shadow: none;
-    background-color: #d60074;
-  }
-  .back-to-top svg.icon__arrow-up {
-    fill: white;
-    width: 32px;
-    height: 32px;
-  }
-  
- /* Establece el estilo inicial del elemento */
-.barra-suscripcion {
-    height: auto;
-    background-color:rgba(0,0,255,0.5);
-    opacity: 0; /* El elemento está inicialmente oculto */
-    animation: aparecer 1s linear 30s forwards; /* Animación infinita */
-    position: fixed;
-    top: 0; /* Lo coloca en la parte inferior */
-    left: 0; /* Lo coloca en la parte izquierda */
-    width: 100%; /* Ocupa el 50% del ancho de la pantalla */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  
-    
-  }
-
-  .barra-suscripcion a {
-    padding: 4px 1px;
-    font: 13px "agenda", sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    margin: 0.5em;
-    
-  }
-
-  .barra-suscripcion a:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  @media (min-width: 300px) and (max-width: 567px) {
-
-    .barra-suscripcion{
-        width: 100%;
-        height: auto;
-        
-    }
-    .barra-suscripcion a {
-      padding: 4px 1px;
-      font: 12px "agenda", sans-serif;
-      margin: 10px 10px 5px 10px;
-    }
-  }
-
-
-  @media (min-width: 568px) {
-    .barra-suscripcion a {
-      padding: 5px 50px;
-      font: 16px "agenda", sans-serif;
-      
-    }
-  }
-  .button1 {
-    color: rgb(122, 8, 8);
-    background-color: #ffbf10;
-    transition: 0.2s ease-in-out;
-    border-left: 3px transparent solid;
-    border-right: 3px transparent solid;
-  }
-  
-  .button1:hover {
-    color: #ffbf10;
-    background-color: black;
-    border-left: #ffbf10 3px solid;
-    border-right: #ffbf10 3px solid;
-  }
-  
-  .button2 {
-    color: black;
-    background-color: #10ffb4;
-    transition: 0.2s ease-in-out;
-    border-left: 3px transparent solid;
-    border-right: 3px transparent solid;
-  }
-  
-  .button2:hover {
-    color: #10ffb4;
-    background-color: black;
-    border-left: #10ffb4 3px solid;
-    border-right: #10ffb4 3px solid;
-  }
-
-
-  
-  /* Define la animación para hacer que el elemento aparezca y desaparezca */
-  @keyframes aparecer {
-    to {
-      opacity: 1; /* Cambia la opacidad a 1 para mostrar el elemento */
-    }
-  }
-
+}  
 
   /*/ TABLA STATS */
 
@@ -737,5 +581,12 @@ div.section-head div.players p {
     color: #373738;
 
 }
+
+div.players img {   
+    filter: sepia(88%);
+    -webkit-filter: sepia(88%);
+    -moz-filter: sepia(88%);
+  }
+
 
 

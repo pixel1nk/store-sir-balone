@@ -38,6 +38,7 @@ footer div {
 footer .legal-links a {
     margin: 0 10px ;
     color:#4a1c73
+    text-decoration: none;
 }
 
 @media (min-width: 300px) and (max-width: 567px) {
