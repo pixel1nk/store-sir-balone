@@ -318,9 +318,44 @@ nav {
   .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
     border: #fcce4f solid 2px;
     filter: sepia(88%);
--webkit-filter: sepia(88%);
--moz-filter: sepia(88%);
+    -webkit-filter: sepia(88%);
+    -moz-filter: sepia(88%);
+    position: relative;
+    overflow: hidden;
   }
+
+  /* Shine para cinco primera imágenes */
+
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+  }
+
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child:hover::before, .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:focus::before {
+    -webkit-animation: shine 0.85s;
+    animation: shine 0.85s;
+  }
+
+  @-webkit-keyframes stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td {
+    100% {
+      left: 125%;
+    }
+  }
+  @keyframes stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td {
+    100% {
+      left: 125%;
+    }
+  }
+  
+  /* Fin - Shine para cinco primera imágenes */
 
   .stats-table tbody tr:nth-child(n+8) td:first-child img {
     filter: grayscale(100%);;
@@ -332,7 +367,7 @@ nav {
     width: 80px;
   }
 
-  .stats-table tbody tr:nth-child(n+7) td {
+  .stats-table tbody tr:nth-child(n+8) td {
     font-size: clamp(1.4rem, 2.5vw, 1rem);
   }
   
@@ -563,12 +598,24 @@ nav {
 div.section-head {
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 div.section-head div.players {
   position: inherit;
-  width: 18%;
+  margin: 0 1%;
 }
+
+div.section-head div.players:first-child {
+  position: inherit;
+  margin: 0 1% 0 0;
+}
+
+div.section-head div.players:last-child {
+  position: inherit;
+  margin: 0 0 0 1%;
+}
+
 div.section-head div.players p {
   background-color: #fcce4f;
     text-align: center;
@@ -587,5 +634,45 @@ div.players img {
     -moz-filter: sepia(88%);
   }
 
+  div.players img:hover {   
+    filter: sepia(74%) brightness(106%) saturate(200%);
+-webkit-filter: sepia(74%) brightness(106%) saturate(200%);
+-moz-filter: sepia(74%) brightness(106%) saturate(200%);
+  }
 
 
+  /* Shine para jugadores de sección*/ 
+
+  
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+.shine::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+}
+.shine:hover::before, .shine:focus::before {
+  -webkit-animation: shine 0.85s;
+          animation: shine 0.85s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+  /* Fin - Shine para jugadores de sección*/ 
