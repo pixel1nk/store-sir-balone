@@ -373,7 +373,7 @@ nav {
   
    .stats-table tbody tr td:nth-child(2) span.team {
     font-weight: 400;
-    font-size: clamp(0.5rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: #fff;
     border-top: #cac6d6 solid 2px;
   } 
