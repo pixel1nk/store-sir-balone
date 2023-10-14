@@ -551,7 +551,7 @@ nav {
 
 /* Clase para aplicar el flasheo */
 .flashing {
-  animation: flash 10s linear infinite; /* Animación de 10 segundos */
+  animation: flash 1s linear infinite; /* Animación de 10 segundos */
 }
 
 @keyframes flash {
