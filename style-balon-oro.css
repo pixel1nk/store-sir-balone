@@ -532,7 +532,7 @@ nav {
 }
 
 #navigation {
-  display: block; /* El panel desplegado por defecto */
+  display: none; /* El panel desplegado por defecto */
 }
 
 #toggle-nav {
