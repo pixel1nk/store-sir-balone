@@ -274,6 +274,8 @@ nav {
 
   /*/ TABLA STATS */
 
+  
+
   .table-cont {
     overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
     max-width: 50%; /* Evita que la tabla sea más ancha que la ventana gráfica */
@@ -359,8 +361,6 @@ nav {
       left: 125%;
     }
   }
-
-  
   
   /* Fin - Shine para cinco primera imágenes */
 
@@ -517,9 +517,17 @@ nav {
 @media screen and (max-width: 768px) {
  
   
-  .stats-table tbody tr td {
-    font-size: 10px;
+  .stats-table tbody tr td, .stats-table tbody tr td:nth-child(2) span.team {
+    font-size: 14px;
     
+  }
+
+  .stats-table img {
+    width: 50px;
+  }
+
+  .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
+    height: 50px;
   }
 }
 /* Fin - Tabla Mobile */
