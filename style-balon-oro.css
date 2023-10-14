@@ -546,23 +546,7 @@ nav {
   top: 0;
   right: 0;
   background-color: #fcce4f;
-  transition: opacity 0.3s ease; /* Transición de opacidad */
 }
-
-/* Clase para aplicar el flasheo */
-.flashing {
-  animation: flash 1s linear infinite; /* Animación de 10 segundos */
-}
-
-@keyframes flash {
-  0%, 100% {
-    opacity: 1; /* Opacidad al principio y al final del ciclo */
-  }
-  98% {
-    opacity: 0; /* Opacidad a la mitad del ciclo */
-  }
-}
-/* Fin Clase para aplicar el flasheo */
 
 .vert-nav {
   margin: 0 auto;

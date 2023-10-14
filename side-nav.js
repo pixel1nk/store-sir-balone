@@ -1,18 +1,21 @@
 const toggleButton = document.getElementById('toggle-nav');
 const navigation = document.getElementById('navigation');
 
-// Función para alternar la clase de "flasheo" cada 10 segundos
-function toggleFlash() {
-  toggleButton.classList.toggle('flashing');
-}
-
-// Alternar la clase "flashing" cada 10 segundos
-setInterval(toggleFlash, 10000);
-
 toggleButton.addEventListener('click', () => {
   if (navigation.style.display === 'none' || getComputedStyle(navigation).display === 'none') {
-    navigation.style.display = 'block';
+    navigation.style.display = 'block'; // Desplegar el panel
   } else {
-    navigation.style.display = 'none';
+    navigation.style.display = 'none'; // Minimizar el panel
   }
+});
+
+document.querySelectorAll('a[data-link]').forEach(link => {
+  link.addEventListener('click', (event) => {
+    if (!link.classList.contains('active-link')) {
+      document.querySelectorAll('a[data-link]').forEach(otherLink => {
+        otherLink.classList.remove('active-link');
+      });
+      link.classList.add('active-link');
+    }
+  });
 });
