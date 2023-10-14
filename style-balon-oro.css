@@ -279,7 +279,7 @@ nav {
   .table-cont {
     overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
     max-width: 50%; /* Evita que la tabla sea más ancha que la ventana gráfica */
-    min-width: 400px;
+    min-width: 360px;
     margin: 0 auto;
 }
 
@@ -292,13 +292,13 @@ nav {
 
 .table-cont table {
   
-   min-width: 400px; /* Establece el ancho mínimo de 600px */
+   min-width: 360px; /* Establece el ancho mínimo de 600px */
    
 }
 
 .table-odds table {
   
-  min-width: 800px; /* Establece el ancho mínimo de 600px */
+  min-width: 360px; /* Establece el ancho mínimo de 600px */
   
 }
   .stats-table {
@@ -306,8 +306,7 @@ nav {
     font-size: clamp(1.8rem, 2.5vw, 1rem);
     border-spacing: 0 30px;
     width: 100%;
-    min-width: 800px;
-    border-collapse: collapse;
+    min-width: 360px;
     
   }
 
@@ -517,7 +516,7 @@ nav {
 @media screen and (max-width: 768px) {
  
   
-  .stats-table tbody tr td, .stats-table tbody tr td:nth-child(2) span.team {
+  .stats-table tbody tr td, .stats-table tbody tr td:nth-child(2) span.team, .stats-table tbody tr:nth-child(n+8) td, .stats-table tbody tr:first-child td, .stats-table tbody tr:nth-child(2) td, .table-odds .stats-table tbody tr:first-child td {
     font-size: 14px;
     
   }
@@ -529,6 +528,12 @@ nav {
   .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
     height: 50px;
   }
+  .stats-table tbody tr td:nth-child(1) {
+    width: 50px;
+}
+.stats-table tbody tr td:nth-child(2) span.team {
+  border-top: none;
+}
 }
 /* Fin - Tabla Mobile */
 
