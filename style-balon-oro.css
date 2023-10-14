@@ -537,11 +537,15 @@ nav {
 
 #toggle-nav {
   background-image: url('https://sirbalone.com/img/menu-icon.svg');
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el botón */
+  background-size: contain; /* Ajusta el tamaño de la imagen para cubrir el botón */
   width: 20px; /* Ancho del botón */
   height: 20px; /* Altura del botón */
   border: none; /* Elimina los bordes del botón */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fcce4f;
 }
 
 .vert-nav {
