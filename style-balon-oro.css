@@ -546,6 +546,10 @@ nav {
   cursor: pointer;
 }
 
+#toggle-nav img {
+  width: 16px;
+}
+
 .vert-nav {
   margin: 0 auto;
   padding: 0;
@@ -592,6 +596,9 @@ nav {
     line-height: 2;
   }
 }
+
+
+
   /* Cabecera Seccion con jugadores */
 
 

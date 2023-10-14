@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
     toggleButton.textContent = '◄'; // Cambiar el texto del botón
   } else {
     navigation.style.display = 'none'; // Minimizar el panel
-    toggleButton.textContent = '►'; // Cambiar el texto del botón
+    toggleButton.textContent = '<img src="https://sirbalone.com/img/menu-icon.svg" alt="navegacion vertical">'; // Cambiar el texto del botón
   }
 });
 
