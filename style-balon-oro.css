@@ -281,6 +281,8 @@ nav {
     margin: 0 auto;
 }
 
+
+
 .table-odds {
   overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
   max-width: 100%; /* Evita que la tabla sea más ancha que la ventana gráfica */
@@ -303,8 +305,11 @@ nav {
     border-spacing: 0 30px;
     width: 100%;
     min-width: 800px;
+    border-collapse: collapse;
     
   }
+
+  
 
   .stats-table img {
     width: 100px;
@@ -354,6 +359,8 @@ nav {
       left: 125%;
     }
   }
+
+  
   
   /* Fin - Shine para cinco primera imágenes */
 
@@ -505,6 +512,17 @@ nav {
   color: #fefefa;
 }
 
+/* Tabla Mobile */
+
+@media screen and (max-width: 768px) {
+ 
+  
+  .stats-table tbody tr td {
+    font-size: 10px;
+    
+  }
+}
+/* Fin - Tabla Mobile */
 
 /* Navegador lateral */
 
@@ -547,6 +565,25 @@ nav {
   right: 0;
   background-color: #fcce4f;
 }
+
+/* brillo oro */ 
+
+.glowing-gold {
+  -webkit-animation: gold-glow 5s ease-in-out infinite alternate;
+  -moz-animation: gold-glow 5s ease-in-out infinite alternate;
+  animation: gold-glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes gold-glow {
+  from {
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FFDD1B, 0 0 16px #FFDD1B, 0 0 20px #FFDD1B, 0 0 25px #FFDD1B, 0 0 37px #FFDD1B;
+  }
+  to {
+    box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 5px #FFDD1B, 0 0 8px #FFDD1B, 0 0 10px #FFDD1B, 0 0 14px #FFDD1B, 0 0 17px #FFDD1B;
+  }
+}
+
+/* fin - brillo oro */
 
 .vert-nav {
   margin: 0 auto;
