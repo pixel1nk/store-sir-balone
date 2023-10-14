@@ -558,7 +558,7 @@ nav {
   0%, 100% {
     opacity: 1; /* Opacidad al principio y al final del ciclo */
   }
-  50% {
+  98% {
     opacity: 0; /* Opacidad a la mitad del ciclo */
   }
 }
