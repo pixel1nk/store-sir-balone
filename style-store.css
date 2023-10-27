@@ -68,7 +68,7 @@ hr {
 } 
 
 .logo img{
-    width: 150px;
+    width: 80px;
     color: white;
     display: flex;
     justify-content: center;
@@ -95,7 +95,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.5rem, 10vw, 3rem);
+    font-size: clamp(1rem, 5vw, 1.5rem);
     background-color: #383afe;
     color: #fff;
 }
