@@ -189,7 +189,7 @@ img.simple-stat {
 }
 
 .info-fucsia {
-    border-left: 10px solid #c53151;
+    border-left: 10px solid #ff6183;
     padding: 0 10px;
     margin-left: 10px;
 }
@@ -471,10 +471,10 @@ nav {
 
 .table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(3){
   font-weight: 500;
-  border-bottom: #c53151 solid 2px; 
+  border-bottom: #ff6183 solid 2px; 
 }
 .table-odds .stats-table tbody tr td:nth-child(3) {
-  color: #c53151;
+  color: #ff6183;
   background-color: transparent;
 }
 
