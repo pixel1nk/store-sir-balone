@@ -316,9 +316,9 @@ nav {
     width: 100px;
   }
 
-  .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
+ /*  .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
     height: 100px;
-  }
+  } */
   
 /*  Borde a primeras cinco imagenes */
   .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
@@ -362,6 +362,7 @@ nav {
     border: transparent solid 2px;
     border-bottom: #ffffff solid 2px;
     color: #000735;
+    display: none;
     
   }
 

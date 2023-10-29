@@ -460,9 +460,9 @@ nav {
     width: 100px;
   }
 
-  .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
+/*   .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
     height: 100px;
-  }
+  } */
   
 /*  Borde a primeras cinco imagenes */
   .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
@@ -528,6 +528,7 @@ nav {
     background-color: #fcce4f;
     height: 10px;
     padding: 10px 2%;
+    display: none;
   }
   
   .stats-table tbody tr:nth-child(2) td {
