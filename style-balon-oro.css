@@ -54,13 +54,6 @@ section {
   position: relative;
 }
 
-h3.blue {
-  position: sticky;
-  top: 0;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(10px);
-  background-color: rgba(10, 10, 10, 0.5);
-}
 
 @media (min-width: 300px) and (max-width: 567px) {
     footer {
@@ -132,6 +125,11 @@ h3.blue {
     color: #fefefa;
     text-align: center;
     font-weight: bold;
+    position: sticky;
+    top: 0;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(10, 10, 10, 0.5);
 }
 
 .collection-items {
