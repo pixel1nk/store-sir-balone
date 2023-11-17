@@ -311,7 +311,8 @@ nav {
 }
   .stats-table {
     text-align: center;
-    font-size: clamp(1.8rem, 2.5vw, 1rem);
+    /* font-size: clamp(1.8rem, 2.5vw, 1rem); */
+    font-size: clamp(1.4rem, 2.5vw, 1rem);
     border-spacing: 0 30px;
     width: 100%;
     min-width: 360px;
