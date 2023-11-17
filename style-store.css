@@ -486,6 +486,7 @@ nav {
 
   .stats-table tbody tr td:nth-child(1){
     width: 80px;
+    display: none;
   }
 
   .stats-table tbody tr:nth-child(n+7) td {
