@@ -417,6 +417,7 @@ nav {
     background-color: #fff;
     height: 10px;
     padding: 0 2%;
+    display: none;
   }
 
  
@@ -485,6 +486,7 @@ nav {
   height: 10px;
   padding: 0 2%;
   color: #fefefa;
+  display: none;
 }
 
 /* Tabla Mobile */
