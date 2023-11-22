@@ -84,14 +84,14 @@
         <nav id="navigation">
             <ul class="vert-nav">
                 <li class="list-head"><b>Best Attackers</b></li>
-                <li><a href="#anotacion" data-link="anotacion">Scorers</a></li>
-                <li><a href="#creacion" data-link="creacion">Creation</a></li>
-                <li><a href="#pases" data-link="pases">Passes</a></li>
-                <li><a href="#duelos" data-link="duelos">Duels</a></li>
-                <li><a href="#remates" data-link="remates">Shots</a></li>
-                <li><a href="#definicion" data-link="definicion">Finishing</a></li>
+                <li><a href="#scoring" data-link="anotacion">Scorers</a></li>
+                <li><a href="#creation" data-link="creacion">Creation</a></li>
+                <li><a href="#passes" data-link="pases">Passes</a></li>
+                <li><a href="#duels" data-link="duelos">Duels</a></li>
+                <li><a href="#shots" data-link="remates">Shots</a></li>
+                <li><a href="#finishing" data-link="definicion">Finishing</a></li>
                 <li><a href="#dribble" data-link="dribble">1 vs 1</a></li>
-                <li><a href="#volumen-gol" data-link="volumen-gol">Goal Impact</a></li>
+                <li><a href="#goal-impact" data-link="volumen-gol">Goal Impact</a></li>
                 
             </ul>
             
@@ -136,7 +136,7 @@
                 
         </div>
     </section>
-    <section class="purple-header" id="duels">
+    <section class="purple-header">
         <h3>What are we looking for?</h3>
         <p>If a player is individually skilled there should be a relation between his offensive actions and goals or danger involvement.</p>
         <p>Next are the <b>most effective players in goal-action relation who are in Top 30% for offensive volume.</b></p>
@@ -146,7 +146,7 @@
     </section>
 
     
-    <section id="anotacion sticky">
+    <section id="scoring">
         <h3 class="blue sticky">Top Scorers</h3>
         <div class="texty-text sticky">
             <p>Higher number of goals (excluding penalties) scored per match compared to the top 10% of top attackers.</p>
@@ -161,7 +161,7 @@
     </section>
         <hr>
         
-        <section id="creacion sticky">
+        <section id="creation">
             <h3 class="blue sticky">Top Creators</h3>
             <div class="texty-text"><p>Higher number of individual actions per match directly contributing to goals compared to the top 10% of top attackers.</b></p>
             </div>
@@ -174,7 +174,7 @@
 
         <hr>
         
-        <section id="pases sticky">
+        <section id="passes">
             <h3 class="blue sticky">Top Passers</h3>
             <div class="texty-text">
                 <p>Higher number of passes per match directly contributing to goals compared to the top 10% of top attackers.</b></p>
@@ -189,7 +189,7 @@
 
         <hr>
         
-        <section id="duelos sticky">
+        <section id="duels">
             <h3 class="blue sticky">Top Duelist</h3>
             <div class="texty-text">
                 <p>Greater number of offensive duels per match directly impacting goals compared to the top 10% of top attackers.</b></p>
@@ -205,7 +205,7 @@
           
     </section>
 
-    <section id="remates sticky">
+    <section id="shots">
         <h3 class="blue sticky">Top Shooters</h3>        
         <div class="texty-text">
             <p>Higher number of shot duels per match with a direct impact on goals, including not only scoring but goals resulting from the shot, compared to the top 10% of top attackers.</p>
@@ -219,7 +219,7 @@
         </div>
     </section>
         <hr>
-        <section id="definicion sticky">
+        <section id="finishing">
             <h3 class="blue sticky">Finishing</h3>   
             <div class="texty-text">
                 <p>Higher number of goals scored versus expected goals, indicating superior efficiency in capitalizing on goal-scoring opportunities, compared to the top 10% of top attackers.</p>
@@ -231,7 +231,7 @@
             </div>
         </section>
         <hr>
-        <section id="dribble sticky">
+        <section id="dribble">
             <h3 class="blue sticky">1 vs 1</h3>
             <div class="texty-text">
                 <p>Higher percentage of individual duels won compared to the top 10% of top attackers.</p>
@@ -243,7 +243,7 @@
             </div>
         </section>
         <hr>
-        <section id="volumen-gol sticky">
+        <section id="goal-impact">
             <h3 class="blue sticky">Goal Impact</h3>
             <div class="texty-text">
                 <p>Greater overall goal impact, both in scoring and creating, compared to the top 10% of top attackers.</p>
@@ -282,7 +282,7 @@
 
             <div class="texty-text">
                 <p>Most defensive skills are related to any of this actions:<b> Defensive Duels, Interceptions, Sliding Tackles.</p>
-                <p>Next are the <b>Top 15 performers</b> for each action.</b></p>
+                <p>Next are the <b>best performers</b> for each action.</b></p>
             </div>
             <hr>
     </section>
@@ -368,7 +368,7 @@
     <section id="saves">
         <h3 class="blue">Top xG by shots against </h3> 
         
-        <div class="info-fucsia"><p><b>xG by Shots against:</b> xG value is the probability of the current shot to be scored. A penalty is 0.76</p></div>
+        <div class="info-fucsia"><p><b>xG by Shots against:</b> xG value is the probability of the current shot to be scored.</p></div>
             
             <div id="resultadoHTML" class="table-cont">
             
@@ -414,9 +414,10 @@
     
   <section id="difficult-saves">
       <h3 class="blue">Top Goal Savers</h3> 
-      
+      <div class="info-blue"><p><b>High goal chance saves: </b>A higher value indicates a better performance of the goalkeeper in terms of stopping shots with a high probability of being scored.</p></div>
+    
         
-        <div id="resultadoHTML" class="table-odds">
+        <div id="resultadoHTML" class="table-cont">
         
         
             <table class="stats-table"><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td>Player</td><td>Salvada Gol</td></tr><tr><td><img src="https://sirbalone.com/jugadores/yassine-bounou.webp" alt="Yassine Bounou" loading="lazy"></td><td>Yassine Bounou<br><span class="team">Sevilla</span></td><td>72%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/emiliano-martinez.webp" alt="Emiliano Martínez" loading="lazy"></td><td>Emiliano Martínez<br><span class="team">Aston Villa</span></td><td>70%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/andre-onana.webp" alt="André Onana" loading="lazy"></td><td>André Onana<br><span class="team">Inter</span></td><td>67%</td></tr></tbody></table>
@@ -424,8 +425,7 @@
         </div>
     
     <hr>
-      <div class="info-blue"><p><b>High goal chance saves: </b>A higher value indicates a better performance of the goalkeeper in terms of stopping shots with a high probability of being scored.</p></div>
-  </section>
+      </section>
   
   <hr>
     
