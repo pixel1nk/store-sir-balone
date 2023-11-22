@@ -257,7 +257,7 @@ nav {
 .breadcrumbs {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 25px;
 }
 
 .breadcrumbs li {
@@ -494,10 +494,10 @@ nav {
 @media screen and (max-width: 768px) {
  
   
-  .stats-table tbody tr td, .stats-table tbody tr td:nth-child(2) span.team, .stats-table tbody tr:nth-child(n+8) td, .stats-table tbody tr:first-child td, .stats-table tbody tr:nth-child(2) td, .table-odds .stats-table tbody tr:first-child td {
+ /*  .stats-table tbody tr td, .stats-table tbody tr td:nth-child(2) span.team, .stats-table tbody tr:nth-child(n+8) td, .stats-table tbody tr:first-child td, .stats-table tbody tr:nth-child(2) td, .table-odds .stats-table tbody tr:first-child td {
     font-size: 14px;
     
-  }
+  } */
 
   .stats-table img {
     width: 50px;
