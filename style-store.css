@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background: #292929;
 }
 
 
@@ -9,6 +10,7 @@ body {
     padding: 0;
     margin: 0 auto;
     max-width: 1080px;
+    background: #ffffff;
 }
 
 header {
@@ -39,6 +41,10 @@ footer .legal-links a {
     margin: 0 10px ;
     color:#4a1c73;
     text-decoration: none;
+}
+
+b {
+  font-weight: 600;
 }
 
 @media (min-width: 300px) and (max-width: 567px) {
@@ -95,7 +101,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     background-color: #383afe;
     color: #fff;
 }
@@ -106,7 +112,7 @@ h3 {
 
 h3.blue {
     font-size: clamp(1.5rem, 10vw, 2.5rem);
-    color: #383afe;
+    color: #4a1c73;
     text-align: center;
     font-weight: bold;
     
@@ -260,7 +266,7 @@ span.pink {
 }
 
 .purple-header p {
-    font-size: clamp(1rem, 2.5vw, 1.8rem);
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
     font-weight: 300;
     text-align: center;
 }
