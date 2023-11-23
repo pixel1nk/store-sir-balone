@@ -202,6 +202,31 @@ img.simple-stat {
     padding: 0 10px;
     margin-left: 10px;
 }
+
+span.yellow {
+  background-color: #f4ff8a;
+    color: #4a1c73;
+    padding: 0 10px;
+}
+
+span.blue {
+  background-color: #383afe;
+    color: #fff;
+    padding: 0 10px;
+}
+
+span.purple {
+  background-color: #4a1c73;
+    color: #fff;
+    padding: 0 10px;
+}
+
+span.pink {
+  background-color: #ed1e79;
+    color: #fff;
+    padding: 0 10px;
+}
+
 .info-yellow {
     border-left: 10px solid #f4ff8a;
     padding: 0 10px;
@@ -612,6 +637,7 @@ nav {
 /* Navegador lateral */
 
 #nav-container {
+  display: none;
   position: fixed;
   top: 50%;
   left: 0;
@@ -627,14 +653,16 @@ nav {
 }
 
 #toggle-nav {
+  background-image: url('https://sirbalone.com/img/menu-icon.svg');
+  background-size: contain; /* Ajusta el tamaño de la imagen para cubrir el botón */
+  width: 25px; /* Ancho del botón */
+  height: 25px; /* Altura del botón */
+  border: none; /* Elimina los bordes del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   position: absolute;
-  top: 5px;
-  right: 5px;
-  background: transparent;
-  color:#383afe;
-  border: none;
-  padding: 4px 4px;
-  cursor: pointer;
+  top: 0;
+  right: 0;
+  background-color: transparent;
 }
 
 .vert-nav {
