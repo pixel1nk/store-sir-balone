@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  background: #292929;
+  
 }
 
 
@@ -11,6 +11,9 @@ body {
     margin: 0 auto;
     max-width: 1080px;
     background: #ffffff;
+    box-shadow: 1px 1px 69px -16px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 69px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 69px -16px rgba(0,0,0,0.75);
 }
 
 header {
