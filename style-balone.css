@@ -1,0 +1,332 @@
+body {
+    background: #ffffff;
+    box-shadow: 1px 1px 69px -16px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 69px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 69px -16px rgba(0,0,0,0.75);
+}
+
+header {
+    background-color: #fff;
+}
+
+footer {
+    border-top: #4a1c73 10px solid;
+}
+
+
+footer .legal-links a {
+    color:#4a1c73;
+}
+
+.logo img{
+    color: white;
+}
+
+h1 {
+    background-color: #f4ff8a;
+    color: #4a1c73;
+}
+
+h2 {
+    background-color: #383afe;
+    color: #fff;
+}
+
+
+h3.blue {
+    color: #4a1c73;    
+}
+
+
+a.link-seccion {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: 1px solid #007BFF; /* Borde del botón */
+
+}
+
+a:hover.link-seccion {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+  color: #fff; /* Cambia el color del texto en el hover */
+}
+
+.texty-text p {
+    color: #292929;
+}
+
+.texty-text h4 {
+  color: #383afe;
+  border: #383afe solid 5px;
+}
+
+.info-fucsia {
+    border-left: 10px solid #ed1e79;
+}
+.info-blue {
+    border-left: 10px solid #383afe;
+}
+
+span.yellow {
+  background-color: #f4ff8a;
+    color: #4a1c73;
+}
+
+span.blue {
+  background-color: #383afe;
+    color: #fff;
+}
+
+span.purple {
+  background-color: #4a1c73;
+    color: #fff;
+}
+
+span.pink {
+  background-color: #ed1e79;
+    color: #fff;
+}
+
+.info-yellow {
+    border-left: 10px solid #f4ff8a;
+}
+
+.info-purple {
+    border-left: 10px solid #4a1c73;
+}
+
+.high-yellow {
+    background-color: #f4ff8a;
+    color: #4a1c73;
+}
+
+.purple-header {
+    color: #fff;
+    background-color: #4a1c73;
+}
+
+.purple-header h3{
+    color: #fff;
+}
+
+
+
+/* Estilos de los breadcrumbs */
+
+
+.breadcrumbs li {
+    color: #4a1c73;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    color: #383afe; /* Color del separador */
+}
+
+.breadcrumbs a {
+    color: #383afe; /* Color de los enlaces */
+}
+
+
+/* Styles for section navigation buttons */
+
+.nav-button {
+  color: #dfdfdf; /* Color de la flecha */
+}
+
+
+
+
+/* Styles for the Back to Top button */
+
+.back-to-top {
+    background-color: deeppink;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
+  }
+  .back-to-top:hover {
+    background-color: #ff51af;
+  }
+  .back-to-top:active {
+    box-shadow: none;
+    background-color: #d60074;
+  }
+  .back-to-top svg.icon__arrow-up {
+    fill: white;
+  }
+  
+ /* Establece el estilo inicial del elemento */
+.barra-suscripcion {
+    background-color:rgba(0,0,255,0.5);
+  }
+
+  .barra-suscripcion a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+  .button1 {
+    color: rgb(122, 8, 8);
+    background-color: #ffbf10;
+  }
+  
+  .button1:hover {
+    color: #ffbf10;
+    background-color: black;
+    border-left: #ffbf10 3px solid;
+    border-right: #ffbf10 3px solid;
+  }
+  
+  .button2 {
+    color: black;
+    background-color: #10ffb4;
+  }
+  
+  .button2:hover {
+    color: #10ffb4;
+    background-color: black;
+    border-left: #10ffb4 3px solid;
+    border-right: #10ffb4 3px solid;
+  }
+
+
+  
+ 
+
+
+  /*/ TABLA STATS */
+
+  
+  
+/*  Borde a primeras cinco imagenes */
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
+    border: #f4ff8a solid 5px;
+  }
+
+ 
+  .stats-table tbody tr:nth-child(n+7) td {
+    font-size: clamp(1.4rem, 2.5vw, 1rem);
+  }
+  
+   .stats-table tbody tr td:nth-child(2) span.team {
+    color: #645b7d;
+    border-top: #cac6d6 solid 2px;
+  } 
+
+  .stats-table tbody tr td:nth-child(2){
+    border: transparent solid 5px;
+    border-bottom: #f4ff8a solid 5px;
+    color: #4a1c73;
+    
+  }
+  .stats-table tbody tr td:nth-child(3){
+    border-bottom: #f4ff8a solid 5px;
+    background-color: #f4ff8a;
+    color: #4a1c73;
+  }
+  .stats-table tbody tr td:nth-child(4){
+    border-bottom: #383afe solid 5px;
+    color: #383afe;
+  }
+
+  .stats-table tbody tr td:nth-child(5){
+    border-bottom: #4a1c73 solid 5px;
+    color: #4a1c73;
+  }
+
+  .stats-table tbody tr td:nth-child(6){
+    border-bottom: #ed1e79 solid 5px;
+    color: #ed1e79;
+  }
+
+  .stats-table tbody tr:first-child td {
+    background-color: #fcce4f;
+  }
+  
+  .stats-table tbody tr:nth-child(2) td {
+    background-color: #fff;
+  }
+
+ 
+/*/ TABLA ODDS */
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(6){
+  border-bottom: #383afe solid 5px;
+}
+.table-odds .stats-table tbody tr td:nth-child(6) {
+  color: #383afe;
+}
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(5){
+  border-bottom: #f4ff8a solid 5px;
+  background-color: #f4ff8a;
+  
+}
+.table-odds .stats-table tbody tr td:nth-child(5), .table-odds .stats-table tbody tr td:nth-child(4) {
+  color: #4a1c73;
+}
+
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(4){
+  border-bottom: #4a1c73 solid 5px;
+}
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(3){
+  border-bottom: #ed1e79 solid 5px;
+ 
+  background-color: #fff;
+}
+.table-odds .stats-table tbody tr td:nth-child(3) {
+  color: #ed1e79;
+}
+
+.stats-table tbody tr:first-child td {
+  background-color: #fcce4f;
+  border-bottom: transparent;
+}
+
+.stats-table tbody tr:nth-child(2) td {
+  border-bottom: transparent solid 5px;
+  background-color: #fff;
+}
+
+
+/* Navegador lateral */
+
+#nav-container {
+  background: #ececec;
+}
+
+
+
+#toggle-nav {
+ background-color: transparent;
+}
+
+
+
+.vert-nav li a {
+  color: #4a1c73;
+}
+
+.vert-nav .active-link {
+  color:#d60074; /* Cambia el color según tu preferencia */
+  font-weight: bold; /* Puedes ajustar otros estilos como negrita o subrayado */
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+ 
+  .vert-nav li:not(:first-child):not(:last-child)::after {
+    color: #383afe;
+  }
+}
+  /* Cabecera Seccion con jugadores */
+
+
+div.section-head div.players p {
+  background-color: #f4ff8a;
+    color: #4a1c73;
+
+}
+
