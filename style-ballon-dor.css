@@ -1,0 +1,322 @@
+body {
+   
+    background: rgb(1,11,19);
+    background: -moz-radial-gradient(circle, rgba(1,11,19,1) 0%, rgba(16,12,8,0.9332107843137255) 49%, rgba(26,17,16,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(1,11,19,1) 0%, rgba(16,12,8,0.9332107843137255) 49%, rgba(26,17,16,1) 100%);
+    background: radial-gradient(circle, rgba(1,11,19,1) 0%, rgba(16,12,8,0.9332107843137255) 49%, rgba(26,17,16,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010b13",endColorstr="#1a1110",GradientType=1);
+    
+}
+
+footer {
+    
+    border-top: #373738 10px solid;
+}
+
+
+footer .legal-links a {
+    color:#fcce4f;
+}
+
+
+
+p {
+  color: #fefefa;
+}
+
+.logo img{
+    color: white;
+}
+
+
+h1 {
+   
+    color: #fcce4f;
+}
+
+h2 {
+    
+    background-color: #fcce4f;
+    color: #373738;
+}
+
+h3.blue {
+    color: #fefefa;
+   }
+
+
+
+.collection-items {
+    
+    color: #ffffff;
+    
+}
+
+
+
+a.link-seccion {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: 1px solid #007BFF; /* Borde del botón */
+}
+
+a:hover.link-seccion {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+  color: #fff; /* Cambia el color del texto en el hover */
+}
+
+.texty-text p {
+    color: #ffffff;
+}
+
+.texty-text h4 {
+  color: #fefefa;
+  border: #555652 solid 2px;
+}
+
+.info-fucsia {
+    border-left: 10px solid #ff6183;
+}
+.info-blue {
+    border-left: 10px solid #fefefa;
+}
+.info-yellow {
+    border-left: 10px solid #fcce4f;
+}
+
+.info-purple {
+    border-left: 10px solid #373738;
+}
+
+
+.high-yellow p {
+  color: #fcce4fbf;
+}
+
+.purple-header {
+    color: #fff;
+}
+
+.purple-header h3{
+   
+    color: #fff;
+}
+
+
+
+/* Estilos de los breadcrumbs */
+
+.breadcrumbs li {
+    color: #fcce4f;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    color: #fefefa; /* Color del separador */
+}
+
+.breadcrumbs a {
+    color: #fefefa; /* Color de los enlaces */
+}
+
+
+
+  /*/ TABLA STATS */
+
+  
+
+ 
+/*  Borde a primeras cinco imagenes */
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
+    border: #fcce4f solid 2px;
+    
+  }
+
+  /* Shine para cinco primera imágenes */
+
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    
+}
+  /* Fin - Shine para cinco primera imágenes */
+
+.stats-table tbody tr:nth-child(n+8) td:first-child img {
+    filter: grayscale(100%);;
+-webkit-filter: grayscale(100%);;
+-moz-filter: grayscale(100%);;
+  }
+
+   .stats-table tbody tr td:nth-child(2) span.team {
+    color: #fff;
+    border-top: #cac6d6 solid 2px;
+  } 
+
+  .stats-table tbody tr td:nth-child(2){
+    border-bottom: #fcce4f solid 2px;
+    color: #fcce4f;
+    
+  }
+
+  .stats-table tbody tr:first-child td {
+    border-bottom: #fcce4f solid 2px;
+    color: #141414;
+    
+  }
+
+  .stats-table tbody tr td:nth-child(3){
+    border-bottom: #fcce4f solid 2px;
+    background-color: #fcce4f;
+    color: #1b1b1b;
+  }
+  .stats-table tbody tr td:nth-child(4){
+    border-bottom: #fefefa solid 2px;
+    color: #fefefa;
+  }
+
+  .stats-table tbody tr td:nth-child(5){
+    border-bottom: #373738 solid 2px;
+    color: #373738;
+  }
+
+  .stats-table tbody tr td:nth-child(6){
+    border-bottom: #ed1e79 solid 2px;
+    color: #ed1e79;
+  }
+
+  .stats-table tbody tr:first-child td {
+    background-color: #fcce4f;
+    color: #141414;
+  }
+  
+  .stats-table tbody tr:nth-child(2) td {
+    background-color: #fff;
+  }
+
+ 
+/*/ TABLA ODDS */
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(6){
+  border-bottom: #dbdfee solid 2px;
+}
+.table-odds .stats-table tbody tr td:nth-child(6) {
+  color: #fefefa;
+}
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(5){
+  border-bottom: #fcce4f solid 2px;
+  background-color: #fcce4f;
+  
+}
+.table-odds .stats-table tbody tr td:nth-child(5), .table-odds .stats-table tbody tr td:nth-child(4) {
+  color: #fefefa;
+}
+
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(4){
+  border-bottom: #373738 solid 2px;
+}
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(3){
+  border-bottom: #ff6183 solid 2px; 
+}
+.table-odds .stats-table tbody tr td:nth-child(3) {
+  color: #ff6183;
+}
+
+.table-odds .stats-table tbody tr td:nth-child(5) {
+  color: #373738;
+}
+
+.table-odds .stats-table tbody tr td:nth-child(6) {
+  color: #dbdfee;
+}
+
+.table-odds .stats-table tbody tr:nth-child(2) td:nth-child(5) {
+  color: #fefefa;
+}
+
+.table-odds .stats-table tbody tr:first-child td {
+  background-color: #fcce4f;
+  border-bottom: transparent;
+  color: #373738;
+}
+
+.stats-table tbody tr:nth-child(2) td {
+  color: #fefefa;
+}
+
+
+/* Navegador lateral */
+
+#nav-container {
+  border: #fcce4f71 solid 1px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  #nav-container {
+    background-color: rgba(10, 10, 10, 0.5);
+  }
+
+}
+
+
+
+#toggle-nav {
+  
+  background-color: #fcce4f;
+}
+
+/* brillo oro */ 
+
+.glowing-gold {
+  -webkit-animation: gold-glow 5s ease-in-out infinite alternate;
+  -moz-animation: gold-glow 5s ease-in-out infinite alternate;
+  animation: gold-glow 5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes gold-glow {
+  from {
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FFDD1B, 0 0 16px #FFDD1B, 0 0 20px #FFDD1B, 0 0 25px #FFDD1B, 0 0 37px #FFDD1B;
+  }
+  to {
+    box-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 5px #FFDD1B, 0 0 8px #FFDD1B, 0 0 10px #FFDD1B, 0 0 14px #FFDD1B, 0 0 17px #FFDD1B;
+  }
+}
+
+/* fin - brillo oro */
+
+.vert-nav li.list-head {
+  color: #fefefa;
+}
+
+.vert-nav li a {
+  color: #fefefac9;
+}
+
+.vert-nav .active-link {
+  color:#be9c17; /* Cambia el color según tu preferencia */
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+  
+  .vert-nav li:not(:first-child):not(:last-child)::after {
+    color: #fefefa;
+  }
+}
+
+
+
+  /* Cabecera Seccion con jugadores */
+
+div.section-head div.players p {
+  background-color: #fcce4f;
+    color: #373738;
+
+}
+
+  /* Shine para jugadores de sección*/ 
+
+.shine::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
