@@ -119,7 +119,17 @@ a:hover.link-seccion {
 }
 
 
+div.players img {   
+  filter: sepia(88%);
+  -webkit-filter: sepia(88%);
+  -moz-filter: sepia(88%);
+}
 
+div.players img:hover {   
+  filter: sepia(74%) brightness(106%) saturate(200%);
+-webkit-filter: sepia(74%) brightness(106%) saturate(200%);
+-moz-filter: sepia(74%) brightness(106%) saturate(200%);
+}
   /*/ TABLA STATS */
 
   
