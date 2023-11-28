@@ -9,6 +9,7 @@ body {
     padding: 0;
     margin: 0 auto;
     height: 100vh;
+    max-width: 1080px;
     background: rgb(0,15,119);
 background: -moz-radial-gradient(circle, rgba(0,15,119,1) 0%, rgba(34,48,145,1) 49%, rgba(0,13,105,1) 100%);
 background: -webkit-radial-gradient(circle, rgba(0,15,119,1) 0%, rgba(34,48,145,1) 49%, rgba(0,13,105,1) 100%);
@@ -390,8 +391,8 @@ nav {
 
   .stats-table tbody tr td:nth-child(5){
     font-weight: 500;
-    border-bottom: #000735 solid 2px;
-    color: #000735;
+    border-bottom: #FFDD1B solid 2px;
+    color: #FFDD1B;
   }
 
   .stats-table tbody tr td:nth-child(6){

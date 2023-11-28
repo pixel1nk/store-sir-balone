@@ -12,53 +12,52 @@
     <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon.png">
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "SportsEvent",
-            "name": "European Football Soccer",
-            "description": "Player performance on UEFA Champions League 2023 - 2024",
-            "url": "https://sirbalone.com/champions-league-23-24",
-            "startDate": "2023-06-27T00:00:00-05:00",
-            "endDate": "2024-06-01T23:59:59-05:00",
-            "competitor": [
-              {
+          "@context": "http://schema.org",
+          "@type": "SportsEvent",
+          "name": "Futbol Europeo",
+          "description": "Desempeño de los jugadores en la UEFA Champions League 2023 - 2024",
+          "url": "https://sirbalone.com/liga-de-campeones-23-24",
+          "startDate": "2023-06-27T00:00:00-05:00",
+          "endDate": "2024-06-01T23:59:59-05:00",
+          "competitor": [
+            {
+              "@type": "Person",
+              "name": "Serhou Guirassy",
+              "position": "Delantero",
+              "ranking": 1,
+              "image": "https://sirbalone.com/jugadores/serhou-guirassy.webp"
+            },
+            {
+              "@type": "Person",
+              "name": "Jamal Musiala",
+              "position": "Delantero",
+              "ranking": 2,
+              "image": "https://sirbalone.com/jugadores/jamal-musiala.webp"
+            },
+            {
+              "@type": "Person",
+              "name": "Luca Ranieri",
+              "position": "Defensa",
+              "ranking": 3,
+              "image": "https://sirbalone.com/jugadores/luca-ranieri.webp"
+            },            
+            {
                 "@type": "Person",
-                "name": "Serhou Guirassy",
-                "position": "Forward",
-                "ranking": 1,
-                "image": "https://sirbalone.com/jugadores/serhou-guirassy.webp"
+                "name": "Mads Juel Andersen",
+                "position": "Defensa",
+                "ranking": 4,
+                "image": "https://sirbalone.com/jugadores/mads-juel-andersen.webp"
               },
-              {
-                "@type": "Person",
-                "name": "Jamal Musiala",
-                "position": "Forward",
-                "ranking": 2,
-                "image": "https://sirbalone.com/jugadores/jamal-musiala.webp"
-              },
-              {
-                "@type": "Person",
-                "name": "Luca Ranieri",
-                "position": "Defense",
-                "ranking": 3,
-                "image": "https://sirbalone.com/jugadores/luca-ranieri.webp"
-              },            
-              {
-                  "@type": "Person",
-                  "name": "Mads Juel Andersen",
-                  "position": "Defense",
-                  "ranking": 4,
-                  "image": "https://sirbalone.com/jugadores/mads-juel-andersen.webp"
-                },
-              {
-                "@type": "Person",
-                "name": "David Raya",
-                "position": "Goalkeeper",
-                "ranking": 5,
-                "image": "https://sirbalone.com/jugadores/david-raya.webp"
-              }
-            ]
-          }
-        </script>
-         
+            {
+              "@type": "Person",
+              "name": "David Raya",
+              "position": "Arquero",
+              "ranking": 5,
+              "image": "https://sirbalone.com/jugadores/david-raya.webp"
+            }
+          ]
+        }
+        </script>        
 </head>
 <body>
     <header>
@@ -75,7 +74,7 @@
     
     <nav>
         <ul class="breadcrumbs">
-            <li><a href="https://sirbalone.com/">Home</a></li>
+            <li><a href="https://sirbalone.com/inicio">Inicio</a></li>
             <li>UEFA Champions League 2023 - 2024</li>
         </ul>
     </nav>
@@ -84,30 +83,30 @@
         <nav id="navigation">
             
             <ul class="vert-nav">
-                <li class="list-head"><b>Defense</b></li>
+                <li class="list-head"><b>Defensa</b></li>
                 <li><a href="#defduels" data-link="slides">1 vs 1</a></li>
-                <li><a href="#interceptions" data-link="interceptions">Interceptions</a></li>
-                <li><a href="#pass-bloq" data-link="defduels">Pass Blocking</a></li>
-                <li><a href="#shot-bloq" data-link="defense-total">Shot Blocking</a></li>
+                <li><a href="#interceptions" data-link="interceptions">Intercepciones</a></li>
+                <li><a href="#pass-bloq" data-link="defduels">Bloqueos de pases</a></li>
+                <li><a href="#shot-bloq" data-link="defense-total">Bloqueo de remates</a></li>
                 <li><a href="#total-def" data-link="total-def">Total</a></li>
             </ul>
             <br>
             <ul class="vert-nav">
-                <li class="list-head"><b>Goalkeeper</b></li>
-                <li><a href="#saves" data-link="saves">Saves</a></li>
-                <li><a href="#difficult-saves" data-link="difficult-saves">Goal Saves</a></li>
+                <li class="list-head"><b>Arquero</b></li>
+                <li><a href="#saves" data-link="saves">Salvadas</a></li>
+                <li><a href="#difficult-saves" data-link="difficult-saves">Salvadas de Gol</a></li>
             </ul>
             <br>
             <ul class="vert-nav">
-                <li class="list-head"><b>Attackers</b></li>
-                <li><a href="#scoring" data-link="anotacion">Scorers</a></li>
-                <li><a href="#creation" data-link="creacion">Creation</a></li>
-                <li><a href="#passes" data-link="pases">Passes</a></li>
-                <li><a href="#duels" data-link="duelos">Duels</a></li>
-                <li><a href="#shots" data-link="remates">Shots</a></li>
-                <li><a href="#finishing" data-link="definicion">Finishing</a></li>
+                <li class="list-head"><b>Atacantes</b></li>
+                <li><a href="#anotacion" data-link="anotacion">Anotadores</a></li>
+                <li><a href="#creacion" data-link="creacion">Generación</a></li>
+                <li><a href="#pases" data-link="pases">Pases</a></li>
+                <li><a href="#duelos" data-link="duelos">Duelos</a></li>
+                <li><a href="#remates" data-link="remates">Remates</a></li>
+                <li><a href="#definicion" data-link="definicion">Definición</a></li>
                 <li><a href="#dribble" data-link="dribble">1 vs 1</a></li>
-                <li><a href="#goal-impact" data-link="volumen-gol">The Bests</a></li>
+                <li><a href="#volumen-gol" data-link="volumen-gol">Los mejores</a></li>
                 
             </ul>
             
@@ -118,38 +117,41 @@
       </div>
       
 
-    <h1>Best players on UEFA Champions League 2023 - 2024</h1>
+    <h1>Mejores jugadores en la UEFA Champions League 2023 - 2024</h1>
    
     <hr>
     <section>
         <div class="texty-text">
             
-            <h3 class="blue">How we measure?</h3>
-            <p>We check how each player performs compared to the top 10% average by using percentages, using fbref.com data.
+            <h3 class="blue">¿Cómo medimos?</h3>
+            <p>Medimos el desempeño de cada jugador en comparación con el promedio de los mejores 10% utilizando porcentajes, usando los datos de fbref.com.
                 <br><br>
-                <b>Higher percentages mean the player is performing closer or above the top 10% average.</b>
-                
+                <b>Porcentajes más altos significan que el jugador se desempeña más cerca o por encima del promedio de los mejores 10%.</b>
             </p>
-            <p><b>For example: If a player has 125% participation in goals, it means they are 25% above the average of the top 10% with the highest goal participation.</b></p>
             
+            <p><b>Por ejemplo: Si un jugador tiene 125% en participación en goles, quiere decir que está un 25% sobre el promedio de los Top 10% con más participación en goles</b>
+            </p>
             <br><br>
-
-                <img src="https://sirbalone.com/img/reports/percentils-white.webp" alt="Performance percentage" loading="lazy">
-                <br>
-                
+            <img src="https://sirbalone.com/img/reportes/percentils-white.webp" alt="Porcentaje de rendimiento" loading="lazy">
+            <br>            
         </div>
     </section>
+
     <section class="purple-header">
-        <h3>What are we looking for?</h3>
-        <p>If a player is individually skilled there should be a relation between his offensive actions and goals or danger involvement.</p>
-        <p>We're looking for the players with the highest <b>goal-action relation.</b></p>
+        <h3>¿Qué Buscamos?</h3>
+        <p>Si un jugador tiene habilidades individuales , <b>debería haber una relación entre sus acciones ofensivas y los goles o la participación en jugadas de gol.</b></p>
+        <p>Buscamos a los jugadores con la relación más alta entre impacto en goles y acciones individuales</p>
         <hr>
-        <p><b>THOSE TRULY DECISIVE DUE TO THEIR INDIVIDUAL SKILL</b></p>
+        <p><b>AQUELLOS REALMENTE DETERMINANTES POR SU HABILIDAD INDIVIDUAL</b></p>
         <hr>
     </section>
     
+
+    
+        
+
     <section>
-        <h2>Defenders</h2>
+        <h2>Defensores</h2>
         <div class="section-head shine">
             <div class="players">
                 <img src="https://sirbalone.com/jugadores/andre-ramalho.webp" alt="André Ramalho" loading="lazy">
@@ -172,34 +174,31 @@
                 <p>103%</p>
             </div>     
         </div>
-
-            <div class="texty-text">
-                <p>Most defensive skills are related to any of this actions:<b> Defensive Duels, Interceptions and Blocks.</p>
-                <p>Next are the <b>best performers</b> for each action.</b></p>
-            </div>
+<hr>
+        <div class="texty-text">
+            <p>La mayoría de las habilidades defensivas están relacionadas con alguna de estas acciones: <b>Duelos Defensivos, Intercepciones y Bloqueos.</b></p>
+            <p>A continuación se encuentran los <b>mejores</b> en cada acción.</p>
+        </div>
+        
             <hr>
     </section>
 
     <section id="defduels">
-        <h3 class="blue sticky">Top 1 vs 1 Defensive</h3> 
-        <div class="texty-text">
-            <p>Higher number of defensive duels won by match and top 30% on Interceptions, compared to the top 10% of defenders.</p>
-          
-        </div>
-        
+        <h3 class="blue sticky">Top 1 vs 1 Defensa</h3> 
+        <p>Mayor número de duelos defensivos ganados por partido, y top 30% en cantidad de intercepciones. Comparado con el top 10% de defensores.</p>
             
             <div id="resultadoHTML" class="table-cont">
             
             
-            <table class="stats-table"><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td>Player</td><td>1 vs 1</td></tr><tr><td><img src="https://sirbalone.com/jugadores/andre-ramalho.webp" alt="André Ramalho" loading="lazy"></td><td>André Ramalho<br><span class="team">nl PSV Eindhoven</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/adam-marusic.webp" alt="Adam Marušić" loading="lazy"></td><td>Adam Marušić<br><span class="team">it Lazio</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/nico-schlotterbeck.webp" alt="Nico Schlotterbeck" loading="lazy"></td><td>Nico Schlotterbeck<br><span class="team">de Dortmund</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/valerii-bondar.webp" alt="Valerii Bondar" loading="lazy"></td><td>Valerii Bondar<br><span class="team">ua Shakhtar</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/jude-bellingham.webp" alt="Jude Bellingham" loading="lazy"></td><td>Jude Bellingham<br><span class="team">es Real Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/joelinton.webp" alt="Joelinton" loading="lazy"></td><td>Joelinton<br><span class="team">eng Newcastle Utd</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/marius-wolf.webp" alt="Marius Wolf" loading="lazy"></td><td>Marius Wolf<br><span class="team">de Dortmund</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/axel-witsel.webp" alt="Axel Witsel" loading="lazy"></td><td>Axel Witsel<br><span class="team">es Atlético Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/andreas-christensen.webp" alt="Andreas Christensen" loading="lazy"></td><td>Andreas Christensen<br><span class="team">es Barcelona</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/cameron-carter-vickers.webp" alt="Cameron Carter-Vickers" loading="lazy"></td><td>Cameron Carter-Vickers<br><span class="team">sct Celtic</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/rodrigo-de-paul.webp" alt="Rodrigo De Paul" loading="lazy"></td><td>Rodrigo De Paul<br><span class="team">es Atlético Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/marcos-alonso.webp" alt="Marcos Alonso" loading="lazy"></td><td>Marcos Alonso<br><span class="team">es Barcelona</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/lucas-tousart.webp" alt="Lucas Tousart" loading="lazy"></td><td>Lucas Tousart<br><span class="team">de Union Berlin</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/stefan-savic.webp" alt="Stefan Savić" loading="lazy"></td><td>Stefan Savić<br><span class="team">es Atlético Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/galeno.webp" alt="Galeno" loading="lazy"></td><td>Galeno<br><span class="team">pt Porto</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/aaron-wan-bissaka.webp" alt="Aaron Wan-Bissaka" loading="lazy"></td><td>Aaron Wan-Bissaka<br><span class="team">eng Manchester Utd</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/fikayo-tomori.webp" alt="Fikayo Tomori" loading="lazy"></td><td>Fikayo Tomori<br><span class="team">it Milan</span></td><td>103%</td></tr></tbody></table>
+                <table class="stats-table"><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td>Player</td><td>1 vs 1</td></tr><tr><td><img src="https://sirbalone.com/jugadores/andre-ramalho.webp" alt="André Ramalho" loading="lazy"></td><td>André Ramalho<br><span class="team">nl PSV Eindhoven</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/adam-marusic.webp" alt="Adam Marušić" loading="lazy"></td><td>Adam Marušić<br><span class="team">it Lazio</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/nico-schlotterbeck.webp" alt="Nico Schlotterbeck" loading="lazy"></td><td>Nico Schlotterbeck<br><span class="team">de Dortmund</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/valerii-bondar.webp" alt="Valerii Bondar" loading="lazy"></td><td>Valerii Bondar<br><span class="team">ua Shakhtar</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/jude-bellingham.webp" alt="Jude Bellingham" loading="lazy"></td><td>Jude Bellingham<br><span class="team">es Real Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/joelinton.webp" alt="Joelinton" loading="lazy"></td><td>Joelinton<br><span class="team">eng Newcastle Utd</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/marius-wolf.webp" alt="Marius Wolf" loading="lazy"></td><td>Marius Wolf<br><span class="team">de Dortmund</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/axel-witsel.webp" alt="Axel Witsel" loading="lazy"></td><td>Axel Witsel<br><span class="team">es Atlético Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/andreas-christensen.webp" alt="Andreas Christensen" loading="lazy"></td><td>Andreas Christensen<br><span class="team">es Barcelona</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/cameron-carter-vickers.webp" alt="Cameron Carter-Vickers" loading="lazy"></td><td>Cameron Carter-Vickers<br><span class="team">sct Celtic</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/rodrigo-de-paul.webp" alt="Rodrigo De Paul" loading="lazy"></td><td>Rodrigo De Paul<br><span class="team">es Atlético Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/marcos-alonso.webp" alt="Marcos Alonso" loading="lazy"></td><td>Marcos Alonso<br><span class="team">es Barcelona</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/lucas-tousart.webp" alt="Lucas Tousart" loading="lazy"></td><td>Lucas Tousart<br><span class="team">de Union Berlin</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/stefan-savic.webp" alt="Stefan Savić" loading="lazy"></td><td>Stefan Savić<br><span class="team">es Atlético Madrid</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/galeno.webp" alt="Galeno" loading="lazy"></td><td>Galeno<br><span class="team">pt Porto</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/aaron-wan-bissaka.webp" alt="Aaron Wan-Bissaka" loading="lazy"></td><td>Aaron Wan-Bissaka<br><span class="team">eng Manchester Utd</span></td><td>121%</td></tr><tr><td><img src="https://sirbalone.com/jugadores/fikayo-tomori.webp" alt="Fikayo Tomori" loading="lazy"></td><td>Fikayo Tomori<br><span class="team">it Milan</span></td><td>103%</td></tr></tbody></table>
 
-        </div>
+            </div>
             <hr>
     </section>
 
     <section id="interceptions">
-        <h3 class="blue sticky">Top Interceptors</h3> 
-        <p>Higher number of Interceptions by match and top 30% on defensive duels won, compared to the top 10% of defenders.</p>
+        <h3 class="blue sticky">Top Intercepciones</h3> 
+        <p>Mayor número de interceciones por partido, y top 30% en cantidad de duelos defensivos ganados. Comparado con el top 10% de defensores.</p>
             
             <div id="resultadoHTML" class="table-cont">
             
@@ -211,8 +210,8 @@
     </section>
 
     <section id="pass-bloq">
-        <h3 class="blue sticky">Top Pass Blockers</h3> 
-        <p>Higher number of passes blocked by match and top 30% on Interceptions, compared to the top 10% of defenders.</p>
+        <h3 class="blue sticky">Top Bloqueo de Pases</h3> 
+        <p>Mayor número de pases bloqueados por partido, y top 30% en cantidad de intercepciones. Comparado con el top 10% de defensores.</p>
             
             <div id="resultadoHTML" class="table-cont">
             
@@ -224,8 +223,9 @@
     </section>
 
     <section id="shot-bloq">
-        <h3 class="blue sticky">Top Shot Blockers</h3> 
-        <p>Higher number of shots blocked by match and top 30% on Interceptions, compared to the top 10% of defenders.</p>
+        <h3 class="blue sticky">Top Bloqueo de Remates</h3> 
+        <p>Mayor número de remates bloqueados por partido, y top 30% en cantidad de intercepciones. Comparado con el top 10% de defensores.</p>
+        
             
             <div id="resultadoHTML" class="table-cont">
             
@@ -235,11 +235,11 @@
             </div>
             <hr>
     </section>
-
+    
     <section id="total-def">
-        <h3 class="blue sticky">Top Defenders</h3> 
+        <h3 class="blue sticky">Top Defensas</h3> 
         <div class="texty-text">
-            <p>Best performance on <span class="yellow">1 vs 1</span>  and <span class="blue">Interceptions</span></p>              
+            <p>Mejor rendimiento en duelos <span class="yellow">1 vs 1</span>  e <span class="blue">Intercepciones</span></p>              
         </div>
             
             <div id="resultadoHTML" class="table-cont">
@@ -253,7 +253,7 @@
 
 
     <section>
-        <h2>Goalkeepers</h2>
+        <h2>Arqueros</h2>
         <div class="section-head shine">
             <div class="players">
                 <img src="https://sirbalone.com/jugadores/manuel-neuer.webp" alt="Manuel Neuer" loading="lazy">
@@ -282,18 +282,19 @@
         </div>
         <hr>
             <div class="texty-text">
-                <p>We can evaluate the goal keeper performance based on these actions: xG Shots against, Shots against by game, Save Rate</p>              
+                <p>Podemos evaluar el rendimiento del portero basándonos en estas acciones: xG de remates en contra, Remates en contra por partido, Tasa de paradas</p>              
             </div>
         <hr>
     </section>
 
     <section id="saves">
-        <h3 class="blue">Top xG by shots against </h3> 
+        <h3 class="blue">Top xG de remates en contra </h3> 
         <div class="texty-text">
-            <p>Values compared to the top 10% higher among the Goalkeepers</p>              
+            <p>Valores comparados con el 10% más alto de los arqueros.</p>              
         </div>
         
-        <div class="info-yellow"><p><b>xG by Shots against:</b> xG value is the probability of the current shot to be scored. Higher means that the shots are more difficult to save.</p></div>
+        <div class="info-yellow"><p><b>xG por remates en contra:</b> El valor de xG es la probabilidad de que el disparo actual se convierta en gol. Entre más alto significa que los remates son más difíciles de atajar.</p></div>
+
             
             <div id="resultadoHTML" class="table-cont">
             
@@ -306,9 +307,9 @@
     </section>
 
     <section>
-        <h3 class="blue">Top Shots Against by game </h3> 
+        <h3 class="blue">Top remates en contra por partido </h3> 
         <div class="texty-text">
-            <p>Values compared to the top 10% higher among the Goalkeepers</p>              
+            <p>Valores comparados con el 10% más alto de los arqueros.</p>              
         </div>
    
             
@@ -323,12 +324,12 @@
     </section>
 
     <section>
-        <h3 class="blue">Top Save Rate </h3> 
+        <h3 class="blue">Top Salvadas </h3> 
         <div class="texty-text">
-            <p>Values compared to the top 10% higher among the Goalkeepers</p>              
+            <p>Valores comparados con el 10% más alto de los arqueros.</p>              
         </div>
         
-        <div class="info-yellow"><p><b>Save Rate:</b> Rate for successful attempt from the goalkeeper to prevent a shot from being scored.</p></div>
+        <div class="info-yellow"><p><b>Tasa de salvadas:</b> Tasa de intentos exitosos del portero para evitar que un disparo se convierta en gol.</p></div>
             
             <div id="resultadoHTML" class="table-cont">
             
@@ -340,11 +341,11 @@
         <hr>
     </section>
 
-    
+ 
   <section id="difficult-saves">
-      <h3 class="blue">Top Goal Savers</h3> 
-      <div class="info-yellow"><p><b>High goal chance saves: </b>A higher value indicates a better performance of the goalkeeper in terms of stopping shots with a high probability of being scored.</p></div>
-    
+      <h3 class="blue">Top Salvadas de Gol</h3> 
+      <div class="info-yellow"><p><b>Salvadas de gol:</b> Un valor más alto indica un mejor desempeño del portero en términos de detener tiros con una alta probabilidad de ser anotados.</p></div>
+      
         
         <div id="resultadoHTML" class="table-cont">
         
@@ -354,11 +355,12 @@
         </div>
     
     <hr>
-      </section>
+    
+  </section>
   
   <hr>
   <section>
-    <h2>Attackers</h2>
+    <h2>Atacantes</h2>
     <div class="section-head shine">
         <div class="players ">
             <img src="https://sirbalone.com/jugadores/julian-alvarez.webp" alt="Julián Álvarez" loading="lazy">
@@ -386,12 +388,12 @@
       
         
         <hr>
+</section>
 
-
-<section id="scoring">
-    <h3 class="blue sticky">Top Scorers 100%+</h3>
+<section id="anotacion">
+    <h3 class="blue sticky">Top Anotadores 100%+</h3>
     <div class="texty-text sticky">
-        <p>Higher number of goals (excluding penalties) scored per match compared to the top 10% of top attackers.</p>
+        <p>Mayor número de goles (no penales) anotados por partido comparado con el top 10% de los mejores atacantes.</p>
     </div>
     
     
@@ -403,9 +405,9 @@
 </section>
     <hr>
     
-    <section id="creation">
-        <h3 class="blue sticky">Top Creators 100%+</h3>
-        <div class="texty-text"><p>Higher number of individual actions per match directly contributing to goals compared to the top 10% of top attackers.</b></p>
+    <section id="creacion">
+        <h3 class="blue sticky">Generación de Gol 100%+</h3>
+        <div class="texty-text"><p>Mayor número de acciones individuales por partido que tienen participación directa en gol, comparado con el 10% de los mejores atacantes.</b></p>
         </div>
         
         <div id="resultadoHTML" class="table-cont">
@@ -416,10 +418,10 @@
 
     <hr>
     
-    <section id="passes">
-        <h3 class="blue sticky">Top Passers</h3>
+    <section id="pases">
+        <h3 class="blue sticky">Pasadores Top</h3>
         <div class="texty-text">
-            <p>Higher number of passes per match directly contributing to goals compared to the top 10% of top attackers.</b></p>
+            <p>Mayor número de pases por partido que tienen participación directa en gol, comparado con el 10% de los mejores atacantes.</b></p>
         </div>
         
         
@@ -431,10 +433,10 @@
 
     <hr>
     
-    <section id="duels">
-        <h3 class="blue sticky">Top Duelist</h3>
+    <section id="duelos">
+        <h3 class="blue sticky">Duelistas Top</h3>
         <div class="texty-text">
-            <p>Greater number of offensive duels per match directly impacting goals compared to the top 10% of top attackers.</b></p>
+            <p>Mayor número de duelos ofensivos por partido que tienen un impacto directo en gol, comparado con el 10% de los mejores atacantes.</b></p>
         </div>
         
         <div id="resultadoHTML" class="table-cont">
@@ -447,10 +449,10 @@
       
 </section>
 
-<section id="shots">
-    <h3 class="blue sticky">Top Shooters</h3>        
+<section id="remates">
+    <h3 class="blue sticky">Rematadores top</h3>        
     <div class="texty-text">
-        <p>Higher number of shot per match with a direct impact on goals, including not only scoring but goals resulting from the shot, compared to the top 10% of top attackers.</p>
+        <p>Mayor número de remates por partido que tienen un impacto directo en gol, no solo anotación, sino goles derivados del remate, comparado con el 10% de los mejores atacantes.</p>
     </div>
     
         
@@ -461,10 +463,10 @@
     </div>
 </section>
     <hr>
-    <section id="finishing">
-        <h3 class="blue sticky">Finishing</h3>   
+    <section id="definicion">
+        <h3 class="blue sticky">Infalibles</h3>   
         <div class="texty-text">
-            <p>Higher number of goals scored versus expected goals, indicating <span class="yellow">superior efficiency in capitalizing on goal-scoring opportunities</span>, compared to the top 10% of top attackers.</p>
+            <p>Mayor número de goles anotados vs la cantidad de goles esperados, <span class="yellow">quienes aprovechan mejor las oportunidades de gol</span>, comparado con el 10% de los mejores atacantes.</p>
         </div>
         
         <div id="resultadoHTML" class="table-cont">
@@ -476,7 +478,7 @@
     <section id="dribble">
         <h3 class="blue sticky">1 vs 1</h3>
         <div class="texty-text">
-            <p>Higher percentage of <span class="blue">individual duels won</span>  and <span class="yellow">goal impact</span> compared to the top 10% of top attackers.</p>
+            <p>Mejor porcentaje de <span class="blue">duelos individuales ganados</span> e <span class="yellow">impacto directo en goles</span>, comparado con el 10% de los mejores atacantes.</p>
         </div>
         
         <div id="resultadoHTML" class="table-cont">
@@ -486,10 +488,10 @@
         </div>
     </section>
     <hr>
-    <section id="goal-impact">
-        <h3 class="blue sticky">The Bests 100%+</h3>
+    <section id="volumen-gol">
+        <h3 class="blue sticky">Los Mejores 100%+</h3>
         <div class="texty-text">
-            <p>Greater overall <span class="yellow">goal impact</span>, both in <span class="blue">scoring</span> and <span class="purple">creating</span>, compared to the top 10% of top attackers.</p>
+            <p>Mayor <span class="yellow">impacto de gol total</span>, tanto <span class="blue">anotando</span> como <span class="purple">creando</span>, comparado con el 10% de los mejores atacantes.</p>
         </div>
         <div id="resultadoHTML" class="table-cont">
         
@@ -498,24 +500,21 @@
         </div>
     </section>
     <hr>  
-
-    <h2>More Reports</h2>
+    <h2>Más Reportes</h2>
 
     <div class="collection-items">
     
-    
+        
         <div class="collection-item">
-            <h3>Ballon D'or 2023</h3>
-            <a href="https://sirbalone.com/ballon-dor-2023"><img src="img/reports/ballon-dor-2023.webp" alt="Ballon dor 2023 nominees"></a>
+            <h3>Balón de Oro 2023</h3>
+            <a href="https://sirbalone.com/balon-de-oro-2023"><img src="img/reportes/balon-de-oro-2023.webp" alt="Nominados Balon de oro 2023"></a>
         </div>
-    
-    
+
         <div class="collection-item">
-            <h3>Big 5 Europe 2022 - 2023</h3>
-            <a href="https://sirbalone.com/big-5-europe-22-23"><img src="img/reports/euro-22-23.webp" alt="Best players Top 5 Europe Leagues 22 - 23"></a>
+            <h3>Europa 2022 - 2023</h3>
+            <a href="https://sirbalone.com/5-grandes-europa-22-23"><img src="img/reportes/europa-22-23.webp" alt="Mejores jugadores 5 grandes ligas de europa 22 - 23"></a>
         </div>
     </div>
-
     <hr>
   <div class="content-bottom"></div>
   <footer>
@@ -527,9 +526,9 @@
         
     </div>
     <div class="legal-links">
-        <a href="https://sirbalone.com/privacy.html" target="_self">Privacy Policy</a>
+        <a href="https://sirbalone.com/privacy.html" target="_self">Política de Privacidad</a>
         <a href="https://sirbalone.com/copyright.html" target="_self">Copyright</a>
-        <a href="https://sirbalone.com/contact.html" target="_self">Contact</a>
+        <a href="https://sirbalone.com/contact.html" target="_self">Contacto</a>
     </div>
 </footer>
 
