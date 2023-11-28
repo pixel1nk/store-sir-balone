@@ -150,6 +150,10 @@ h3.blue {
     width: 100%;
 }
 
+.collection-item h3{
+  color: #dbdfee;
+}
+
 a.link-seccion {
     display: inline-block; /* Para que el enlace ocupe solo el ancho del contenido */
     padding: 10px 20px; /* Ajusta el espaciado interno para el botón */
