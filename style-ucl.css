@@ -213,13 +213,13 @@ img.simple-stat {
     margin-left: 10px;
 }
 .info-yellow {
-    border-left: 10px solid #ffffff;
     padding: 0 10px;
     margin-left: 10px;
 }
 
 .info-yellow p{
   text-align: center;
+  font-size: clamp(1.2rem, 2.5vw, 1rem);
 }
 
 .info-purple {
