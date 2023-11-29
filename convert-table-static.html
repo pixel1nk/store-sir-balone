@@ -35,7 +35,7 @@
         tablaHTML += '<td>';
             if (i > 1) { // Excluye las dos primeras filas (índices 0 y 1)
         var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
-        tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy" onerror="this.onerror=null;this.src='https://sirbalone.com/jugadores/player.webp';>';
+        tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy" onerror="this.onerror=null;this.src='https://sirbalone.com/img/player.webp';">;
     }
 
     <img src="ruta_a_tu_imagen.jpg" alt="Descripción de la imagen" onerror="this.onerror=null;this.src='ruta_a_imagen_generica.jpg';">
