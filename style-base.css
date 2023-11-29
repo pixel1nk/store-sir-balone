@@ -348,12 +348,6 @@ nav {
   
   /* Fin - Shine para cinco primera imágenes */
 
-  .stats-table tbody tr:nth-child(n+8) td:first-child img {
-    filter: grayscale(100%);;
--webkit-filter: grayscale(100%);;
--moz-filter: grayscale(100%);;
-  }
-
   .stats-table tbody tr td:nth-child(1){
     width: 80px;
   }
