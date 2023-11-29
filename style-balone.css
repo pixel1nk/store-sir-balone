@@ -199,9 +199,7 @@ span.pink {
   
 /*  Borde a primeras cinco imagenes */
   .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
-    filter: sepia(88%);
-    -webkit-filter: sepia(88%);
-    -moz-filter: sepia(88%);
+   
     border: #f4ff8a solid 5px;
   }
 
