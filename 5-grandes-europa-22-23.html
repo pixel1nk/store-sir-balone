@@ -544,5 +544,16 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script  src="https://sirbalone.com/side-nav.js"></script>
+<script>
+    window.onload = function() {
+        var todasLasImagenes = document.getElementsByTagName('img');
+        for (var i = 0; i < todasLasImagenes.length; i++) {
+            todasLasImagenes[i].onerror = function() {
+                this.src = 'https://sirbalone.com/jugadores/player.webp'; // Ruta a tu imagen genérica
+                this.onerror = null; // Prevenir bucles infinitos
+            };
+        }
+    };
+    </script>
 </body>
 </html>

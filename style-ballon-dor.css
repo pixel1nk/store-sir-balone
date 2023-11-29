@@ -138,6 +138,9 @@ div.players img:hover {
 /*  Borde a primeras cinco imagenes */
   .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
     border: #fcce4f solid 2px;
+    filter: sepia(88%);
+    -webkit-filter: sepia(88%);
+    -moz-filter: sepia(88%);
     
   }
 
