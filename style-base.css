@@ -53,6 +53,11 @@ p {
   font-size: clamp(1rem, 2.5vw, 1.8rem);
 }
 
+p b {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 
 @media (min-width: 300px) and (max-width: 567px) {
     footer {
