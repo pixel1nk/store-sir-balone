@@ -274,7 +274,36 @@ nav {
   div.player-card {
     flex: 0 0 18%;
     margin-top: 20px;
-    gap: 2%;
+    
+  }
+
+  .player-card img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .player-card h4  {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+    margin: 0;
+    word-break: break-word;
+  }
+
+  .player-card h5  {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .num1, .num2, .num3 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    text-align: center;
+    padding: 5px;
+  } 
+
+  .num1 {    
+  font-weight: 700;
   }
 
 
@@ -291,7 +320,7 @@ nav {
 
   .table-cont {
     overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
-    max-width: 50%; /* Evita que la tabla sea más ancha que la ventana gráfica */
+    max-width: 80%; /* Evita que la tabla sea más ancha que la ventana gráfica */
     min-width: 360px;
     margin: 0 auto;
     display: flex;

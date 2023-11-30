@@ -188,7 +188,34 @@ span.pink {
     border-right: #10ffb4 3px solid;
   }
 
+ /*/ PLAYER CARD */
 
+
+.player-card h4  {
+  color: #4a1c73;
+}
+
+.player-card h5  {
+  color: #292929;
+}
+
+.num1 {
+  background-color: #f4ff8a;
+  color: #4a1c73;
+} 
+
+.num2 {
+  color: #383afe;
+}
+.num3 {
+  color: #ed1e79;
+}
+
+
+
+
+
+ /*/ FIN PLAYER CARD */
   
  
 
