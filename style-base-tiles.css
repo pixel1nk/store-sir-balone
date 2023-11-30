@@ -119,6 +119,7 @@ h3 {
     font-weight: 400;
 }
 
+
 h3.blue {
     font-size: clamp(1.5rem, 10vw, 2.5rem);
         text-align: center;
@@ -265,15 +266,36 @@ nav {
     text-decoration: underline;
 }  
 
+
+  /*/ PLAYER CARD */
+
+
+
+  div.player-card {
+    flex: 0 0 18%;
+    margin-top: 20px;
+    gap: 2%;
+  }
+
+
+
+
+
+   /*/ FIN PLAYER CARD */
+
+
   /*/ TABLA STATS */
 
   
+
 
   .table-cont {
     overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
     max-width: 50%; /* Evita que la tabla sea más ancha que la ventana gráfica */
     min-width: 360px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 

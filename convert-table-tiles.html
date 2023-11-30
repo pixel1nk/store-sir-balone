@@ -28,10 +28,13 @@
 
     for (var i = 1; i < lineas.length; i++) {
         var columnas = lineas[i].split('\t');
-        var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
+        var nombreCompleto = columnas[1];
+        var nombrePartes = nombreCompleto.split(' ');
+        var apellido = nombrePartes[nombrePartes.length - 1]; // Toma solo la última palabra
+        var nombreImagen = apellido.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
-        html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
-        html += '<h4>' + columnas[1] + '</h4>';
+        html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + apellido + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + columnas[0] + '</h5>';
         for (var j = 2; j < columnas.length; j++) {
             html += '<div class="num' + (j - 1) + '">' + columnas[j] + '</div>';
