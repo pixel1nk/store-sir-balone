@@ -1,0 +1,652 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "agenda", sans-serif;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1080px;
+    
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    }
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .legal-links a {
+    margin: 0 10px ;
+        text-decoration: none;
+}
+section, div, nav {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+}
+
+p {
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+}
+
+p b {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+@media (min-width: 300px) and (max-width: 567px) {
+    footer {
+        flex-direction: column;
+    } 
+    footer .legal-links {
+        margin-top: 15px;
+    }
+}
+
+img {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    display: block;
+}
+
+hr {
+    height: 50px;
+    border: none;
+    
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+} 
+
+.logo img{
+    width: 150px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 10vw, 4rem); 
+    }
+
+h2 {
+    font-size: clamp(1.5rem, 10vw, 3rem);
+      }
+
+h3 {
+    font-weight: 400;
+}
+
+h3.blue {
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
+        text-align: center;
+    font-weight: bold;
+  }
+
+  h3.sticky {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    margin: 0;
+  }
+
+.collection-items {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+        
+}
+
+.collection-item {
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.collection-item img{
+    width: 100%;
+}
+
+a.link-seccion {
+    display: inline-block; /* Para que el enlace ocupe solo el ancho del contenido */
+    padding: 10px 20px; /* Ajusta el espaciado interno para el botón */
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+          
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave al pasar el mouse */
+
+}
+
+
+
+img.one-stat {
+    width: 50%;
+    max-width: 380px;
+}
+
+img.simple-stat {
+    width: 80%;
+    max-width: 600px;
+}
+
+.texty-text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texty-text p {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    font-weight: 300;
+    }
+
+.texty-text h4 {
+  font-size: clamp(1.8rem, 2.5vw, 1rem);
+  font-weight: 600;
+    
+  text-align: center;
+  padding: 20px;
+}
+
+.info-fucsia {
+        padding: 0 10px;
+    margin-left: 10px;
+}
+.info-blue {
+        padding: 0 10px;
+    margin-left: 10px;
+}
+.info-yellow {
+        padding: 0 10px;
+    margin-left: 10px;
+}
+
+.info-purple {
+        padding: 0 10px;
+    margin-left: 10px;
+}
+
+.high-yellow {
+    
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+
+
+.purple-header {
+        padding: 10px;
+}
+
+.purple-header h3{
+    font-size: clamp(1.5rem, 10vw, 2.5rem);
+        text-align: center;
+    font-weight: bold;
+}
+
+.purple-header p {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* Estilos de los breadcrumbs */
+
+nav {
+    padding: 0;
+    margin: 0 auto;
+
+}
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0 25px;
+}
+
+.breadcrumbs li {
+    display: inline;
+    }
+
+.breadcrumbs li:not(:last-child)::after {
+    content: " | ";
+    margin: 0 5px;
+    }
+
+.breadcrumbs a {
+    text-decoration: none;
+    }
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}  
+
+  /*/ TABLA STATS */
+
+  
+
+  .table-cont {
+    overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
+    max-width: 50%; /* Evita que la tabla sea más ancha que la ventana gráfica */
+    min-width: 360px;
+    margin: 0 auto;
+}
+
+
+
+.table-odds {
+  overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
+  max-width: 100%; /* Evita que la tabla sea más ancha que la ventana gráfica */
+}
+
+.table-cont table {
+  
+   min-width: 360px; /* Establece el ancho mínimo de 600px */
+   
+}
+
+.table-odds table {
+  
+  min-width: 360px; /* Establece el ancho mínimo de 600px */
+  
+}
+  .stats-table {
+    text-align: center;
+    /* font-size: clamp(1.8rem, 2.5vw, 1rem); */
+    font-size: clamp(1.4rem, 2.5vw, 1rem);
+    border-spacing: 0 30px;
+    width: 100%;
+    min-width: 360px;
+    
+  }
+
+  
+
+  .stats-table img {
+    width: 100px;
+  }
+
+/*   .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
+    height: 100px;
+  } */
+  
+/*  Borde a primeras cinco imagenes */
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Shine para cinco primera imágenes */
+
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child::before {
+    
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+  }
+
+  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child:hover::before, .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:focus::before {
+    -webkit-animation: shine 0.85s;
+    animation: shine 0.85s;
+  }
+
+  @-webkit-keyframes stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td {
+    100% {
+      left: 125%;
+    }
+  }
+  @keyframes stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td {
+    100% {
+      left: 125%;
+    }
+  }
+  
+  /* Fin - Shine para cinco primera imágenes */
+
+  .stats-table tbody tr:nth-child(n+8) td:first-child img {
+    
+  }
+
+  .stats-table tbody tr td:nth-child(1){
+    width: 80px;
+  }
+
+  .stats-table tbody tr:nth-child(n+8) td {
+    font-size: clamp(1.4rem, 2.5vw, 1rem);
+  }
+  
+   .stats-table tbody tr td:nth-child(2) span.team {
+    font-weight: 400;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+          } 
+
+  .stats-table tbody tr td:nth-child(2){
+    font-weight: 400;
+    
+            
+  }
+
+  .stats-table tbody tr:first-child td {
+    font-weight: 500;
+    
+            
+  }
+
+  .stats-table tbody tr td:nth-child(3){
+    font-weight: 500;
+    min-width: 70px;
+            }
+  .stats-table tbody tr td:nth-child(4){
+    font-weight: 500;
+    min-width: 70px;
+          }
+
+  .stats-table tbody tr td:nth-child(5){
+    font-weight: 500;
+          }
+
+  .stats-table tbody tr td:nth-child(6){
+    font-weight: 500;
+          }
+
+  .stats-table tbody tr:first-child td {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    
+    font-weight: 500;
+      height: 10px;
+    padding: 10px 2%;
+        display: none;
+  }
+  
+  .stats-table tbody tr:nth-child(2) td {
+    font-size: clamp(1.2rem, 2.5vw, 1rem);
+    
+    font-weight: 400;
+      height: 10px;
+    padding: 0 2%;
+    display: none;
+  }
+
+ 
+/*/ TABLA ODDS */
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(6){
+  font-weight: 500;
+  }
+
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(5){
+  font-weight: 500;
+    
+}
+
+
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(4){
+  font-weight: 500;
+  }
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(3){
+  font-weight: 500;
+  }
+
+
+.table-odds .stats-table tbody tr:first-child td {
+  font-size: clamp(1.2rem, 2.5vw, 1rem);
+  
+  font-weight: 500;
+  height: 10px;
+  padding: 10px 2%;
+  border-bottom: transparent;
+  }
+
+.stats-table tbody tr:nth-child(2) td {
+  font-size: clamp(1.2rem, 2.5vw, 1rem);
+  border-bottom: transparent solid 2px;
+  font-weight: 400;
+  height: 10px;
+  padding: 0 2%;
+    display: none;
+}
+
+/* Tabla Mobile */
+
+@media screen and (max-width: 768px) {
+ 
+ /*  
+  .stats-table tbody tr td, .stats-table tbody tr td:nth-child(2) span.team, .stats-table tbody tr:nth-child(n+8) td, .stats-table tbody tr:first-child td, .stats-table tbody tr:nth-child(2) td, .table-odds .stats-table tbody tr:first-child td {
+    font-size: 14px;
+    
+  } */
+
+  .stats-table img {
+    width: 80px;
+  }
+
+  .stats-table tbody tr:nth-child(n+2):nth-child(-n+6) td {
+    height: 50px;
+  }
+  .stats-table tbody tr td:nth-child(1) {
+    width: 50px;
+}
+.stats-table tbody tr td:nth-child(2) span.team {
+  border-top: none;
+}
+}
+/* Fin - Tabla Mobile */
+
+/* Navegador lateral */
+
+#nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, -50%);
+  
+  padding: 12px;
+  z-index: 999;
+  max-width: 220px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  #nav-container {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
+     }
+
+  .warning {
+    display: none;
+  }
+}
+
+#navigation {
+  display: none; /* El panel desplegado por defecto */
+}
+
+#toggle-nav {
+  background-image: url('https://sirbalone.com/img/menu-icon.svg');
+  background-size: contain; /* Ajusta el tamaño de la imagen para cubrir el botón */
+  width: 25px; /* Ancho del botón */
+  height: 25px; /* Altura del botón */
+  
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+
+/* brillo oro */ 
+
+.glowing-gold {
+  -webkit-animation: gold-glow 5s ease-in-out infinite alternate;
+  -moz-animation: gold-glow 5s ease-in-out infinite alternate;
+  animation: gold-glow 5s ease-in-out infinite alternate;
+}
+
+
+
+/* fin - brillo oro */
+
+.vert-nav {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.vert-nav li {
+  list-style: none;
+  
+}
+
+.vert-nav li.list-head {
+  margin-bottom: 10px;
+  }
+
+.vert-nav li a {
+  text-decoration: none;
+  }
+
+.vert-nav .active-link {
+    font-weight: bold; /* Puedes ajustar otros estilos como negrita o subrayado */
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+  
+  .vert-nav li {
+    display: inline;    
+  }
+  
+  .vert-nav li.list-head {    
+    display: block;
+  }
+  
+   
+  .vert-nav li:not(:first-child):not(:last-child)::after {
+    content: " | ";
+    margin: 0 5px;
+        line-height: 2;
+  }
+}
+
+
+
+  /* Cabecera Seccion con jugadores */
+
+
+div.section-head {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+div.section-head div.players {
+  position: inherit;
+  margin: 0 1%;
+}
+
+div.section-head div.players:first-child {
+  position: inherit;
+  margin: 0 1% 0 0;
+}
+
+div.section-head div.players:last-child {
+  position: inherit;
+  margin: 0 0 0 1%;
+}
+
+div.section-head div.players p {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    font-size: clamp(1rem, 4.5vw, 2.8rem);
+    font-weight: 500;
+    
+}
+
+  /* Shine para jugadores de sección*/ 
+
+  
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+.shine::before {
+  
+  content: "";
+  display: block;
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-25deg);
+  width: 50%;
+  z-index: 2;
+}
+.shine:hover::before, .shine:focus::before {
+  -webkit-animation: shine 0.85s;
+          animation: shine 0.85s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+  /* Fin - Shine para jugadores de sección*/ 

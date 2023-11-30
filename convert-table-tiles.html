@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="https://sirbalone.com/style-store.css">
 </head>
 <body>
+
+    <style>
+
+        
+    </style>
     
-    <h1>Convertir Tabla a Tiles 1</h1>
+    <h1>Convertir Tabla a Tiles</h1>
     <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
     <br>
     <button onclick="convertirATarjetas()">Convertir a HTML</button>
@@ -36,8 +41,30 @@
 
     document.getElementById('resultadoHTML').innerHTML = html; 
 }
+    // Obtén el elemento que contiene la tabla
+    var tablaContenedor = document.getElementById("resultadoHTML");
 
+    // Obtén el código HTML de la tabla
+    var codigoHTMLTabla = tablaContenedor.innerHTML;
 
+    // Muestra el código HTML generado en el elemento "codigoHTML"
+    document.getElementById("codigoHTML").value = codigoHTMLTabla;
+
+        // Obtén el elemento del textarea
+    var textarea = document.getElementById("codigoHTML");
+
+    // Agrega un evento click al textarea
+    textarea.addEventListener("click", function() {
+        // Selecciona todo el texto en el textarea
+    textarea.select();
+
+    // Copia el texto seleccionado al portapapeles
+    document.execCommand("copy");
+
+    // Deselecciona el texto para que no quede resaltado
+    textarea.setSelectionRange(0, 0);
+
+});
     </script>    
 </body>
 </html>
