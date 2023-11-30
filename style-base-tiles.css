@@ -283,7 +283,7 @@ nav {
   }
 
   .player-card h4  {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
     text-align: center;
     margin: 0;
     word-break: break-word;
@@ -297,7 +297,7 @@ nav {
   }
 
   .num1, .num2, .num3 {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1.8rem, 3vw, 1.8rem);
     text-align: center;
     padding: 5px;
   } 
