@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertir Tabla a HTML</title>
+    <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
+    <link rel="stylesheet" href="https://sirbalone.com/style-store.css">
+</head>
+<body>
+    
+    <h1>Convertir Tabla a HTML generic player</h1>
+    <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
+    <br>
+    <button onclick="convertirTabla()">Convertir a HTML</button>
+    <br>
+    <textarea id="codigoHTML" rows="10" cols="50"></textarea>
+    <div id="resultadoHTML" class="table-cont"></div>
+
+    <script>
+        function convertirATarjetas() {
+    var texto = document.getElementById('tuTextArea').value;
+    var lineas = texto.split('\n');
+    var html = '';
+
+    for (var i = 1; i < lineas.length; i++) {
+        var columnas = lineas[i].split('\t');
+        var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
+        html += '<div class="player-card">';
+        html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<h4>' + columnas[1] + '</h4>';
+        html += '<h5>' + columnas[0] + '</h5>';
+        for (var j = 2; j < columnas.length; j++) {
+            html += '<div class="num' + (j - 1) + '">' + columnas[j] + '</div>';
+        }
+        html += '</div>';
+    }
+
+    document.getElementById('tuElementoDeSalida').innerHTML = html;
+}
+
+
+    </script>    
+</body>
+</html>
