@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <h1>Convertir Tabla a Tiles</h1>
+    <h1>Convertir Tabla a Tiles 1</h1>
     <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
     <br>
     <button onclick="convertirATarjetas()">Convertir a HTML</button>
@@ -16,8 +16,8 @@
     <div id="resultadoHTML" class="table-cont"></div>
 
     <script>
-        function convertirATarjetas() {
-    var texto = document.getElementById('tuTextArea').value;
+    function convertirATarjetas() {
+    var texto = document.getElementById('tablaTexto').value; 
     var lineas = texto.split('\n');
     var html = '';
 
@@ -34,7 +34,7 @@
         html += '</div>';
     }
 
-    document.getElementById('tuElementoDeSalida').innerHTML = html;
+    document.getElementById('resultadoHTML').innerHTML = html; 
 }
 
 
