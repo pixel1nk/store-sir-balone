@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Convertir Tabla a Tiles</title>
+    <title>EU Convertir Tabla a Tiles</title>
     <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
     <link rel="stylesheet" href="https://sirbalone.com/style-base-tiles.css">
     <link rel="stylesheet" href="https://sirbalone.com/style-balone.css">
@@ -13,7 +13,7 @@
         
     </style>
     
-    <h1>Convertir Tabla a Tiles nombre</h1>
+    <h1>EU Convertir Tabla a Tiles</h1>
     <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
     <br>
     <button onclick="convertirATarjetas()">Convertir a HTML</button>
@@ -33,8 +33,12 @@
         var nombrePartes = nombreCompleto.split(' ');
         var apellido = nombrePartes[nombrePartes.length - 1]; // Toma solo la última palabra
         var nombreImagen = nombreCompleto.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
+        var nombreEquipo = columnas[0].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
         html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<div class="team-logo">';
+            html += '<img src="https://sirbalone.com/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';    
+        html += '</div>';
         html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + columnas[0] + '</h5>';
         for (var j = 2; j < columnas.length; j++) {
