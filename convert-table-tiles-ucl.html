@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertir Tabla a Tiles</title>
+    <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
+    <link rel="stylesheet" href="https://sirbalone.com/style-base-tiles.css">
+    <link rel="stylesheet" href="https://sirbalone.com/style-balone.css">
+</head>
+<body>
+
+    <style>
+
+        
+    </style>
+    
+    <h1>Convertir Tabla a Tiles nombre</h1>
+    <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
+    <br>
+    <button onclick="convertirATarjetas()">Convertir a HTML</button>
+    <br>
+    <textarea id="codigoHTML" rows="10" cols="50"></textarea>
+    <div id="resultadoHTML" class="table-cont"></div>
+
+    <script>
+    function convertirATarjetas() {
+    var texto = document.getElementById('tablaTexto').value; 
+    var lineas = texto.split('\n');
+    var html = '';
+
+    for (var i = 1; i < lineas.length; i++) {
+        var columnas = lineas[i].split('\t');
+        var nombreCompleto = columnas[1];
+        var nombrePartes = nombreCompleto.split(' ');
+        var apellido = nombrePartes[nombrePartes.length - 1]; // Toma solo la última palabra
+        var nombreImagen = nombreCompleto.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
+        var equipo = columnas[0];
+        var equipoPartes = equipo.split(' ');
+        var equipoSinPrimeraPalabra = equipoPartes.slice(1).join(' '); // Elimina la primera palabra y une el resto
+        html += '<div class="player-card">';
+        html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
+        html += '<h5>' + equipoSinPrimeraPalabra + '</h5>';
+        for (var j = 2; j < columnas.length; j++) {
+            html += '<div class="num' + (j - 1) + '">' + columnas[j] + '</div>';
+        }
+        html += '</div>';
+    }
+
+    document.getElementById('resultadoHTML').innerHTML = html; 
+
+    // Obtén el elemento que contiene la tabla
+    var tablaContenedor = document.getElementById("resultadoHTML");
+
+    // Obtén el código HTML de la tabla
+    var codigoHTMLTabla = tablaContenedor.innerHTML;
+
+    // Muestra el código HTML generado en el elemento "codigoHTML"
+    document.getElementById("codigoHTML").value = codigoHTMLTabla;
+
+        // Obtén el elemento del textarea
+    var textarea = document.getElementById("codigoHTML");
+
+    // Agrega un evento click al textarea
+    textarea.addEventListener("click", function() {
+        // Selecciona todo el texto en el textarea
+    textarea.select();
+
+    // Copia el texto seleccionado al portapapeles
+    document.execCommand("copy");
+
+    // Deselecciona el texto para que no quede resaltado
+    textarea.setSelectionRange(0, 0);
+
+});
+}
+    
+    </script>    
+</body>
+</html>
