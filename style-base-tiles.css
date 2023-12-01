@@ -320,7 +320,7 @@ nav {
 
   .table-cont {
     overflow-x: auto; /* Habilita el scroll horizontal cuando el contenido es más ancho que el contenedor */
-    max-width: 80%; /* Evita que la tabla sea más ancha que la ventana gráfica */
+    max-width: 90%; /* Evita que la tabla sea más ancha que la ventana gráfica */
     min-width: 360px;
     margin: 0 auto;
     display: flex;
