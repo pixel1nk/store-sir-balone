@@ -36,8 +36,12 @@
         var equipo = columnas[0];
         var equipoPartes = equipo.split(' ');
         var equipoSinPrimeraPalabra = equipoPartes.slice(1).join(' '); // Elimina la primera palabra y une el resto
+        var nombreEquipo = equipoSinPrimeraPalabra.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
         html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<div class="team-logo">';
+            html += '<img src="https://sirbalone.com/equipos/' + nombreEquipo + '.webp" alt="' + equipoSinPrimeraPalabra + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';    
+        html += '</div>';
         html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + equipoSinPrimeraPalabra + '</h5>';
         for (var j = 2; j < columnas.length; j++) {
