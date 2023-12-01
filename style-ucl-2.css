@@ -1,0 +1,276 @@
+
+body {
+
+    background: rgb(0,15,119);
+background: -moz-radial-gradient(circle, rgba(0,15,119,1) 0%, rgba(34,48,145,1) 49%, rgba(0,13,105,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(0,15,119,1) 0%, rgba(34,48,145,1) 49%, rgba(0,13,105,1) 100%);
+background: radial-gradient(circle, rgba(0,15,119,1) 0%, rgba(34,48,145,1) 49%, rgba(0,13,105,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000f77",endColorstr="#000d69",GradientType=1);
+    
+}
+
+footer {
+    border-top: #000735 10px solid;
+}
+
+
+
+footer .legal-links a {
+    color:#fff;
+}
+
+
+
+
+p {
+  color: #fefefa;
+}
+.logo img{
+    color: white;
+}
+
+h1 {
+    color: #ffff;
+}
+
+h2 {
+    background-color: #000735;
+    color: #ffffff;
+}
+
+
+h3.blue {
+    color: #fefefa;
+  }
+
+
+.collection-item h3{
+  color: #dbdfee;
+}
+
+a.link-seccion {
+    
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: 1px solid #007BFF; /* Borde del botón */
+}
+
+a:hover.link-seccion {
+    background-color: #0056b3; /* Cambia el color de fondo en el hover */
+  color: #fff; /* Cambia el color del texto en el hover */
+}
+
+
+.texty-text p {
+    color: #ffffff;
+}
+
+.texty-text h4 {
+  color: #fefefa;
+  border: #96a9ff solid 2px;
+}
+
+.info-fucsia {
+    border-left: 10px solid #fff07a;
+}
+.info-blue {
+    border-left: 10px solid #fefefa;
+}
+
+.info-purple {
+    border-left: 10px solid #000735;
+}
+
+.high-yellow p {
+  color: #ffffffbf;
+}
+
+.purple-header {
+    color: #fff;
+}
+
+.purple-header h3{
+    color: #fff;
+}
+
+/* Estilos de los breadcrumbs */
+
+.breadcrumbs li {
+    color: #ffffff;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    color: #fefefa; /* Color del separador */
+}
+
+.breadcrumbs a {
+    color: #fefefa; /* Color de los enlaces */
+}
+
+
+  /*/ TABLA STATS */
+
+  
+   .stats-table tbody tr td:nth-child(2) span.team {
+    color: #fff;
+    border-top: #cac6d6 solid 2px;
+  } 
+
+  .stats-table tbody tr td:nth-child(2){
+    border: transparent solid 2px;
+    border-bottom: #ffffff solid 2px;
+    color: #ffffff;
+    
+  }
+
+  .stats-table tbody tr:first-child td {
+    border: transparent solid 2px;
+    border-bottom: #ffffff solid 2px;
+    color: #000735;    
+  }
+
+  .stats-table tbody tr td:nth-child(3){
+    border-bottom: #ffffff solid 2px;
+    background-color: #ffffff;
+    color: #1b1b1b;
+  }
+  .stats-table tbody tr td:nth-child(4){
+    border-bottom: #fefefa solid 2px;
+    color: #fefefa;
+  }
+
+  .stats-table tbody tr td:nth-child(5){
+    border-bottom: #FFDD1B solid 2px;
+    color: #FFDD1B;
+  }
+
+  .stats-table tbody tr td:nth-child(6){
+    border-bottom: #ed1e79 solid 2px;
+    color: #ed1e79;
+  }
+
+  .stats-table tbody tr:first-child td {
+    background-color: #ffffff;
+    color: #000735;
+  }
+  
+  .stats-table tbody tr:nth-child(2) td {
+    background-color: #fff;
+  }
+
+ 
+/*/ TABLA ODDS */
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(6){
+  border-bottom: #dbdfee solid 2px;
+}
+.table-odds .stats-table tbody tr td:nth-child(6) {
+  color: #fefefa;
+}
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(5){
+  border-bottom: #ffffff solid 2px;
+  background-color: #ffffff;
+  
+}
+.table-odds .stats-table tbody tr td:nth-child(5), .table-odds .stats-table tbody tr td:nth-child(4) {
+  color: #fefefa;
+}
+
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(4){
+  border-bottom: #fff solid 2px;
+}
+
+.table-odds .stats-table tbody tr:nth-child(n+3):nth-child(-n+100) td:nth-child(3){
+  border-bottom: #fff07a solid 2px; 
+}
+.table-odds .stats-table tbody tr td:nth-child(3) {
+  color: #fff07a;
+  background-color: transparent;
+}
+
+.table-odds .stats-table tbody tr td:nth-child(5) {
+  color: #000735;
+}
+
+.table-odds .stats-table tbody tr td:nth-child(6) {
+  color: #dbdfee;
+}
+
+.table-odds .stats-table tbody tr:nth-child(2) td:nth-child(5) {
+  color: #fefefa;
+}
+
+.table-odds .stats-table tbody tr:first-child td {
+  background-color: #ffffff;
+  border-bottom: transparent;
+  color: #000735;
+}
+
+.stats-table tbody tr:nth-child(2) td {
+  border-bottom: transparent solid 2px;
+  background-color: transparent;
+  color: #fefefa;
+}
+
+/* Navegador lateral */
+
+#nav-container {
+  border: #ffffff71 solid 1px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  #nav-container {
+    background-color: rgba(10, 10, 10, 0.5);
+  }
+
+}
+
+
+#toggle-nav {
+  background-color: #ffffff;
+}
+
+.vert-nav li.list-head {
+  color: #fefefa;
+}
+
+.vert-nav li a {
+  color: #fefefac9;
+}
+
+.vert-nav .active-link {
+  color:#be9c17; /* Cambia el color según tu preferencia */
+  font-weight: bold; /* Puedes ajustar otros estilos como negrita o subrayado */
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+  
+  .vert-nav li:not(:first-child):not(:last-child)::after {
+    color: #fefefa;
+  }
+}
+
+
+
+  /* Cabecera Seccion con jugadores */
+
+div.section-head div.players p {
+  background-color: #ffffff;
+    color: #000735;
+
+}
+
+  /* Shine para jugadores de sección*/ 
+
+  
+.shine::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+.shine:hover::before, .shine:focus::before {
+  -webkit-animation: shine 0.85s;
+          animation: shine 0.85s;
+}  /* Fin - Shine para jugadores de sección*/ 
