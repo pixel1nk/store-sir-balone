@@ -197,17 +197,21 @@ img.simple-stat {
 .info-fucsia {
         padding: 0 10px;
     margin-left: 10px;
+    width: 80%;
 }
 .info-blue {
     padding: 0 10px;
+    width: 80%;
 }
 .info-yellow {
     padding: 0 10px;
+    width: 80%;
 }
 
 
 .info-purple {
         padding: 0 10px;
+        width: 80%;
 }
 
 .high-yellow {
