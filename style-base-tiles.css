@@ -272,8 +272,7 @@ nav {
 
 
   div.player-card {
-    flex: 0 0 18%;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 150px;
     position: relative;
     
