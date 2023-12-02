@@ -279,12 +279,16 @@ nav {
   }
 
  div.team-logo {
-  width: 30px;
+  width: 50px;
   background: #fff;
   padding: 10px;
   border-radius: 25px;
   position: relative;
   bottom: 10px;
+ }
+
+ div.team-logo img {
+  width: 40px;
  }
 
   .player-card h4  {
@@ -293,7 +297,7 @@ nav {
     margin: 0;
     word-break: break-word;
     position: inherit;
-    bottom: 25px;
+    bottom: 15px;
   }
 
   .player-card h5  {
@@ -302,7 +306,7 @@ nav {
     text-align: center;
     margin-bottom: 5px;
     position: inherit;
-    bottom: 25px;
+    bottom: 15px;
   }
 
   .num1, .num2, .num3 {
@@ -310,7 +314,7 @@ nav {
     text-align: center;
     padding: 5px;
     position: inherit;
-    bottom: 25px;
+    bottom: 15px;
   } 
 
   .num1 {    
