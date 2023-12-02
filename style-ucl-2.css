@@ -274,3 +274,17 @@ div.section-head div.players p {
   -webkit-animation: shine 0.85s;
           animation: shine 0.85s;
 }  /* Fin - Shine para jugadores de sección*/ 
+
+
+/* PLAYER CARD*/
+
+.player-card h4 {
+  color:#000735;
+}
+.num1 {    
+  background-color: #FFDD1B;
+  color: #000735;
+  }
+
+
+/* FIN PLAYER CARD*/
