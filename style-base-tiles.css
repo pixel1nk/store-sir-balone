@@ -274,7 +274,7 @@ nav {
   div.player-card {
     background-color: #fff;
     margin-top: 50px;
-    width: 150px;
+    width: 170px;
     border-radius: 15px;
   }
 
@@ -302,6 +302,7 @@ nav {
   }
 
   .player-card h5  {
+    font-size: clamp(1rem, 3vw, 1.2rem);
     margin: 0;
     font-weight: 400;
     text-align: center;
