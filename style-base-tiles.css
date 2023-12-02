@@ -276,6 +276,9 @@ nav {
     margin-top: 50px;
     width: 170px;
     border-radius: 15px;
+    box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
   }
 
   div.player-card img {
