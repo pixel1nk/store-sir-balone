@@ -46,11 +46,12 @@ section, div, nav {
 
 section {
   position: relative;
+  margin-bottom: 150px;
 }
 
 p {
   text-align: center;
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 p b {
@@ -198,23 +199,20 @@ img.simple-stat {
     margin-left: 10px;
 }
 .info-blue {
-        padding: 0 10px;
-    margin-left: 10px;
+    padding: 0 10px;
 }
 .info-yellow {
-        padding: 0 10px;
-    margin-left: 10px;
+    padding: 0 10px;
 }
+
 
 .info-purple {
         padding: 0 10px;
-    margin-left: 10px;
 }
 
 .high-yellow {
     
     padding: 0 10px;
-    margin-left: 10px;
 }
 
 
