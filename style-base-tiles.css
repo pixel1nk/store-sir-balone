@@ -284,7 +284,6 @@ nav {
   }
 
   div.player-card img {
-    border-radius: 15px;
     position: relative;
     top: 15px;
   }
@@ -315,7 +314,7 @@ nav {
   }
 
   .num1, .num2, .num3 {
-    font-size: clamp(1.8rem, 3vw, 1.8rem);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
     text-align: center;
     padding: 5px;
     border-radius:  0 0 15px 15px  ;
@@ -330,9 +329,19 @@ nav {
     div.player-card {      
       width: 24%;
     }
-
-    .player-card h5 {
+   
+     div.team-logo {
+      height: 40px;
   }
+  div.player-card {
+    margin-top: 20px;
+    }
+    div.player-card img {
+      width: 70%;
+    }
+    div.team-logo img {
+      max-width: 25px;
+     }
 }
 
 
