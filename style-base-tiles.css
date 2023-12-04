@@ -286,6 +286,7 @@ nav {
   div.player-card img {
     position: relative;
     top: 15px;
+    width: 150px;
   }
 
  div.team-logo {
@@ -337,7 +338,7 @@ nav {
     margin-top: 20px;
     }
     div.player-card img {
-      width: 70%;
+      width: 80%;
     }
     div.team-logo img {
       max-width: 25px;
