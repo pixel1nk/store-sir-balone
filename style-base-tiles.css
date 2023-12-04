@@ -276,7 +276,7 @@ nav {
   div.player-card {
     background-color: #fff;
     margin-top: 50px;
-    width: 170px;
+    width: 19%;
     border-radius: 15px;
     box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
 -webkit-box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
@@ -300,14 +300,14 @@ nav {
  }
 
   .player-card h4  {
-    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    font-size: clamp(0.9rem, 2vw, 1.8rem);
     text-align: center;
     margin: 0;
     word-break: break-word;
   }
 
   .player-card h5  {
-    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
     margin: 0;
     font-weight: 400;
     text-align: center;
@@ -326,7 +326,14 @@ nav {
   }
 
 
+  @media (min-width: 300px) and (max-width: 736px) {
+    div.player-card {      
+      width: 24%;
+    }
 
+    .player-card h5 {
+  }
+}
 
 
    /*/ FIN PLAYER CARD */
