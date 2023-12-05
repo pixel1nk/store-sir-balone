@@ -328,7 +328,7 @@ nav {
 
   @media (min-width: 300px) and (max-width: 736px) {
     div.player-card {      
-      width: 24%;
+      width: 18%;
     }
    
      div.team-logo {
