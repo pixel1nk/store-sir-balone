@@ -276,7 +276,7 @@ nav {
   div.player-card {
     background-color: #fff;
     margin-top: 50px;
-    width: 19%;
+    width: 24%;
     border-radius: 15px;
     box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
 -webkit-box-shadow: 2px 3px 32px -15px rgba(0,0,0,0.75);
@@ -286,7 +286,7 @@ nav {
   div.player-card img {
     position: relative;
     top: 15px;
-    width: 150px;
+    max-width: 150px;
   }
 
  div.team-logo {
