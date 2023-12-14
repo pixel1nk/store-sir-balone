@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Convertir Tabla a HTML</title>
-    <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
-    <link rel="stylesheet" href="https://sirbalone.com/style-store.css">
+    <link rel="icon" type="image/x-icon" href="https://sirbalone.netlify.app/img/favicon-tabla.png">
+    <link rel="stylesheet" href="https://sirbalone.netlify.app/style-store.css">
 </head>
 <body>
     
@@ -36,7 +36,7 @@
             if (i > 1) { // Excluye las dos primeras filas (índices 0 y 1)
                 
         var nombreImagen = columnas[1].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
-tablaHTML += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+tablaHTML += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + columnas[1] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';
 
     
     }

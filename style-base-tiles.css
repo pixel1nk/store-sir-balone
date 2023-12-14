@@ -602,7 +602,7 @@ nav {
 }
 
 #toggle-nav {
-  background-image: url('https://sirbalone.com/img/menu-icon.svg');
+  background-image: url('https://sirbalone.netlify.app/img/menu-icon.svg');
   background-size: contain; /* Ajusta el tamaño de la imagen para cubrir el botón */
   width: 25px; /* Ancho del botón */
   height: 25px; /* Altura del botón */

@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>UCL - Convertir Tabla a Tiles</title>
-    <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
-    <link rel="stylesheet" href="https://sirbalone.com/style-base-tiles.css">
-    <link rel="stylesheet" href="https://sirbalone.com/style-balone.css">
+    <link rel="icon" type="image/x-icon" href="https://sirbalone.netlify.app/img/favicon-tabla.png">
+    <link rel="stylesheet" href="https://sirbalone.netlify.app/style-base-tiles.css">
+    <link rel="stylesheet" href="https://sirbalone.netlify.app/style-balone.css">
 </head>
 <body>
 
@@ -38,9 +38,9 @@
         var equipoSinPrimeraPalabra = equipoPartes.slice(1).join(' '); // Elimina la primera palabra y une el resto
         var nombreEquipo = equipoSinPrimeraPalabra.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
-        html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';
         html += '<div class="team-logo">';
-            html += '<img src="https://sirbalone.com/equipos/' + nombreEquipo + '.webp" alt="' + equipoSinPrimeraPalabra + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';    
+            html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + equipoSinPrimeraPalabra + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';    
         html += '</div>';
         html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + equipoSinPrimeraPalabra + '</h5>';

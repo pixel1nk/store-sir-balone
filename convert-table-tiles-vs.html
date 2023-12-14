@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>EU Convertir Tabla a Tiles</title>
-    <link rel="icon" type="image/x-icon" href="https://sirbalone.com/img/favicon-tabla.png">
-    <link rel="stylesheet" href="https://sirbalone.com/style-base-tiles.css">
-    <link rel="stylesheet" href="https://sirbalone.com/style-balone.css">
+    <link rel="icon" type="image/x-icon" href="https://sirbalone.netlify.app/img/favicon-tabla.png">
+    <link rel="stylesheet" href="https://sirbalone.netlify.app/style-base-tiles.css">
+    <link rel="stylesheet" href="https://sirbalone.netlify.app/style-balone.css">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
         var nombreImagen = nombreCompleto.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         var nombreEquipo = columnas[0].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card" style="width: 35%;">';
-        html += '<img src="https://sirbalone.com/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';
+        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';
         html += '<div class="team-logo">';
-            html += '<img src="https://sirbalone.com/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.com/img/player.webp\';">';    
+            html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';    
         html += '</div>';
         html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + columnas[0] + '</h5>';
