@@ -8,10 +8,7 @@
 </head>
 <body>
 
-    <style>
-
-        
-    </style>
+   
     
     <h1>EU Convertir Tabla a Tiles</h1>
     <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
@@ -19,7 +16,9 @@
     <button onclick="convertirATarjetas()">Convertir a HTML</button>
     <br>
     <textarea id="codigoHTML" rows="10" cols="50"></textarea>
+    <p id="mensajeExito" style="display: none;">Contenido copiado</p>
     <div id="resultadoHTML" class="table-cont"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
 
     <script>
     function convertirATarjetas() {
@@ -74,6 +73,21 @@
 
 });
 }
+
+function copiarContenido() {
+    html2canvas(document.getElementById("resultadoHTML")).then(canvas => {
+        canvas.toBlob(function(blob) {
+            const item = new ClipboardItem({ "image/png": blob });
+            navigator.clipboard.write([item]);
+        });
+    });
+
+    document.getElementById("mensajeExito").style.display = 'block';
+    setTimeout(() => {
+        document.getElementById("mensajeExito").style.display = 'none';
+    }, 2000); // Oculta el mensaje después de 2 segundos
+}
+
     
     </script>    
 </body>
