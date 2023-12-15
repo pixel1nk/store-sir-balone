@@ -189,7 +189,7 @@ span.pink {
   }
 
  /*/ PLAYER CARD */
-.table-cont, .player-card {
+.table-cont, .player-card, .player-card img, .player-card .team-logo, .player-card h4, .player-card h5, .player-card .num2 {
   background: #ffffff;
 }
 
