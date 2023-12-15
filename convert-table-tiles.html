@@ -10,7 +10,7 @@
 
    
     
-    <h1>EU Convertir Tabla a Tiles</h1>
+    <h1>EU Convertir Tabla a Tiles JPG</h1>
     <textarea id="tablaTexto" rows="4" cols="50" placeholder="Pega la tabla aquí"></textarea>
     <br>
     <button onclick="convertirATarjetas()">Convertir a HTML</button>
@@ -77,7 +77,7 @@
 function copiarContenido() {
     html2canvas(document.getElementById("resultadoHTML")).then(canvas => {
         canvas.toBlob(function(blob) {
-            const item = new ClipboardItem({ "image/png": blob });
+            const item = new ClipboardItem({ "image/jpg": blob });
             navigator.clipboard.write([item]);
         });
     });
