@@ -189,7 +189,7 @@ span.pink {
   }
 
  /*/ PLAYER CARD */
-.table-cont {
+.table-cont, .player-card {
   background: #ffffff;
 }
 
