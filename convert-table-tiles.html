@@ -34,9 +34,9 @@
         var nombreImagen = nombreCompleto.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         var nombreEquipo = columnas[0].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
-        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '">';
+        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';
         html += '<div class="team-logo">';
-            html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '">';    
+            html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://sirbalone.netlify.app/img/player.webp\';">';    
         html += '</div>';
         html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + columnas[0] + '</h5>';
@@ -74,7 +74,7 @@
 });
 }
 
-function copiarContenido() {
+/* function copiarContenido() {
     html2canvas(document.getElementById("resultadoHTML")).then(canvas => {
         canvas.toBlob(function(blob) {
             const item = new ClipboardItem({ "image/png": blob });
@@ -86,7 +86,7 @@ function copiarContenido() {
     setTimeout(() => {
         document.getElementById("mensajeExito").style.display = 'none';
     }, 2000); // Oculta el mensaje después de 2 segundos
-}
+} */
 
     
     </script>    
