@@ -17,9 +17,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 0 auto;
-    width: 80%;
+   /*  padding: 20px;
+    margin: 0 auto; */
+    width: 100%;
 }
 
 footer {
@@ -39,8 +39,8 @@ footer .legal-links a {
     margin: 0 10px ;
         text-decoration: none;
 }
-section, div, nav {
-  max-width: 1080px;
+ section, div, nav {
+  /* max-width: 1080px; */
   margin: 0 auto;
 }
 
