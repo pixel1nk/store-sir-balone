@@ -20,6 +20,12 @@
     <div id="resultadoHTML" class="table-cont" onclick="copiarContenido()"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
 
+     <!-- Botón para guardar los div como imagen -->
+     <button onclick="guardarComoImagen()">Guardar como imagen</button>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+ 
+    
     <script>
     function convertirATarjetas() {
     var texto = document.getElementById('tablaTexto').value; 
@@ -34,9 +40,9 @@
         var nombreImagen = nombreCompleto.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         var nombreEquipo = columnas[0].toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
-        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy">';
+        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '">';
         html += '<div class="team-logo">';
-            html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '" loading="lazy">';    
+            html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + columnas[0] + '">';    
         html += '</div>';
         html += '<h4>' + apellido + '</h4>'; // Usa solo el apellido
         html += '<h5>' + columnas[0] + '</h5>';
@@ -87,7 +93,51 @@
         document.getElementById("mensajeExito").style.display = 'none';
     }, 2000); // Oculta el mensaje después de 2 segundos
 } */
+function guardarComoImagen() {
+        // Seleccionar todos los divs con clase 'player-card'
+        var playerCards = document.querySelectorAll('.player-card');
 
+        // Crear una función para esperar a que todas las imágenes se carguen
+        function cargarImagenes(card) {
+            return new Promise(function(resolve) {
+                const images = card.querySelectorAll('img');
+                let loadedCount = 0;
+
+                images.forEach(function(img) {
+                    // Verificar si la imagen ya está cargada
+                    if (img.complete) {
+                        loadedCount++;
+                        if (loadedCount === images.length) {
+                            resolve();
+                        }
+                    } else {
+                        // Esperar a que cada imagen se cargue
+                        img.onload = function() {
+                            loadedCount++;
+                            if (loadedCount === images.length) {
+                                resolve();
+                            }
+                        };
+                    }
+                });
+            });
+        }
+
+        // Recorrer cada player-card, esperar a que las imágenes se carguen y luego generar la imagen
+        playerCards.forEach(function(card, index) {
+            cargarImagenes(card).then(function() {
+                html2canvas(card, {
+                    useCORS: true // Para permitir la carga de imágenes desde servidores externos
+                }).then(function(canvas) {
+                    // Crear un enlace para descargar la imagen
+                    var link = document.createElement('a');
+                    link.href = canvas.toDataURL();
+                    link.download = 'player-card-' + (index + 1) + '.png'; // Nombrar la imagen con el índice
+                    link.click(); // Simular el clic para descargar la imagen
+                });
+            });
+        });
+    }
     
     </script>    
 </body>
