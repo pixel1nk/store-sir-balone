@@ -423,7 +423,7 @@ nav {
     z-index: 2;
   }
 
-  .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child:hover::before, .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:focus::before {
+/*   .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:first-child:hover::before, .stats-table tbody tr:nth-child(n+3):nth-child(-n+7) td:focus::before {
     -webkit-animation: shine 0.85s;
     animation: shine 0.85s;
   }
@@ -437,7 +437,7 @@ nav {
     100% {
       left: 125%;
     }
-  }
+  } */
   
   /* Fin - Shine para cinco primera imágenes */
 
