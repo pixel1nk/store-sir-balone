@@ -294,12 +294,13 @@ nav {
 
  div.team-logo {
   background: #fff;
-  height: 60px;
+  height: 24px;
  }
 
  div.team-logo img {
   width: 40px;
-  margin-top: 5px;      
+  margin-top: 5px;
+  display: none;     
  }
 
   .player-card h4  {
