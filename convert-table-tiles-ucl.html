@@ -38,7 +38,7 @@
         var equipoSinPrimeraPalabra = equipoPartes.slice(1).join(' '); // Elimina la primera palabra y une el resto
         var nombreEquipo = equipoSinPrimeraPalabra.toLowerCase().replace(/[\.\s]/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, '-');
         html += '<div class="player-card">';
-        html += '<img src="https://sirbalone.netlify.app/jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy">';
+        html += '<img src="jugadores/' + nombreImagen + '.webp" alt="' + nombreCompleto + '" loading="lazy">';
         html += '<div class="team-logo">';
             html += '<img src="https://sirbalone.netlify.app/equipos/' + nombreEquipo + '.webp" alt="' + equipoSinPrimeraPalabra + '" loading="lazy">';    
         html += '</div>';
