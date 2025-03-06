@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom T-Shirt Creator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container"> 
+    <h1>Customize Your Product</h1>
+    <label for="product_type">Choose Product Type:</label>
+    <select id="productSelect"></select>
+
+    <label for="color">Choose Color:</label>
+    <select id="colorSelect"></select>
+    <img id="productImage" src="" alt="Product Preview" style="width:200px; margin-top:10px;">
+
+    <input type="file" accept="image/*" id="imageUpload">
+    <canvas id="drawing_canvas"></canvas>
+    <button id="buy_button">Buy Now</button>
+  </div>
+
+  <script>    
+
+    const apiKey = 'EWywDwnyiVMidxPgb9DFmOYYqJgD7IzyxQ7hHzOt';
+
+    // Fetch product types and colors from Teemill API
+    document.addEventListener("DOMContentLoaded", function () {
+    const productSelect = document.getElementById("productSelect");
+    const colorSelect = document.getElementById("colorSelect");
+    
+
+    fetch("https://teemill.com/omnis/v3/product/options/")
+        .then(response => response.json())
+        .then(data => {
+            console.log("API Response:", data);
+
+            // Ensure data exists
+            if (!data.data || data.data.length === 0) {
+                console.error("No products found.");
+                return;
+            }
+
+            // Populate product dropdown
+            data.data.forEach(item => {
+                const option = document.createElement("option");
+                option.value = item.item_code;
+                option.textContent = item.name;
+                productSelect.appendChild(option);
+            });
+
+            // Set default color options based on the first product
+            updateColorsDropdown(data.data[0]);
+
+            // Listen for product change to update color options dynamically
+            productSelect.addEventListener("change", function () {
+                const selectedItem = data.data.find(item => item.item_code === this.value);
+                updateColorsDropdown(selectedItem);
+            });
+        })
+        .catch(error => console.error("Error fetching product options:", error));
+
+        function updateColorsDropdown(product) {
+    colorSelect.innerHTML = ""; // Clear previous colors
+    const productImage = document.getElementById("productImage");
+
+    if (!product.colours || Object.keys(product.colours).length === 0) {
+        console.warn("No colors found for this product.");
+        return;
+    }
+
+    Object.keys(product.colours).forEach(color => {
+        const option = document.createElement("option");
+        option.value = color;
+        option.textContent = color;
+        colorSelect.appendChild(option);
+    });
+
+    // Automatically update image when a color is selected
+    colorSelect.addEventListener("change", function () {
+        const selectedColor = this.value;
+        productImage.src = product.colours[selectedColor]; 
+    });
+
+    // Set initial image
+    const firstColor = Object.keys(product.colours)[0];
+    productImage.src = product.colours[firstColor];
+}
+
+});
+document.getElementById("buy_button").addEventListener("click", () => {
+    const selectedProduct = document.getElementById("productSelect").value;
+    const selectedColor = document.getElementById("colorSelect").value;
+    const canvas = document.getElementById("drawing_canvas");
+    const base64_image = canvas.toDataURL(); // Get the user's drawing
+
+    const options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+            image_url: base64_image,
+            item_code: selectedProduct,
+            colours: selectedColor,
+            name: "Custom T-shirt",
+            description: "Your unique design printed on an organic cotton t-shirt.",
+            price: 25.00,
+        }),
+    };
+
+    var newTab = window.open("about:blank", "_blank");
+    newTab.document.write("Loading...");
+
+    fetch("https://teemill.com/omnis/v3/product/create", options)
+        .then(response => response.json())
+        .then(response => newTab.location.href = response.url)
+        .catch(err => console.error(err));
+});
+
+
+  </script>
+
+<script>
+  const canvas = document.getElementById('drawing_canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = 400;
+  canvas.height = 400;
+
+  let image = new Image();
+  let imgX = 0, imgY = 0;
+  let imgWidth, imgHeight;
+  let dragging = false, offsetX, offsetY;
+  let aspectRatio = 1;
+  let scale = 1;
+  let minScale = 0.3, maxScale = 3; // Allow zooming out down to 30% of the original fit size
+
+  function drawImage() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (image.src) {
+          ctx.drawImage(image, imgX, imgY, imgWidth, imgHeight);
+      }
+  }
+
+  document.getElementById('imageUpload').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (file) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+              image.src = e.target.result;
+              image.onload = function() {
+                  aspectRatio = image.width / image.height;
+
+                  // Fit image to the canvas while keeping aspect ratio
+                  imgWidth = canvas.width;
+                  imgHeight = imgWidth / aspectRatio;
+                  if (imgHeight > canvas.height) {
+                      imgHeight = canvas.height;
+                      imgWidth = imgHeight * aspectRatio;
+                  }
+
+                  imgX = (canvas.width - imgWidth) / 2;
+                  imgY = (canvas.height - imgHeight) / 2;
+
+                  scale = imgWidth / image.width;
+                  minScale = scale * 0.3; // Now minScale is 30% of the fit size
+                  drawImage();
+              };
+          };
+          reader.readAsDataURL(file);
+      }
+  });
+
+  function onMouseDown(e) {
+      const mouseX = e.offsetX;
+      const mouseY = e.offsetY;
+
+      if (mouseX >= imgX && mouseX <= imgX + imgWidth &&
+          mouseY >= imgY && mouseY <= imgY + imgHeight) {
+          dragging = true;
+          offsetX = mouseX - imgX;
+          offsetY = mouseY - imgY;
+          canvas.style.cursor = "grabbing";
+      }
+  }
+
+  function onMouseMove(e) {
+      if (dragging) {
+          imgX = e.offsetX - offsetX;
+          imgY = e.offsetY - offsetY;
+          drawImage();
+      }
+  }
+
+  function onMouseUp() {
+      dragging = false;
+      canvas.style.cursor = "grab";
+  }
+
+  function onWheel(e) {
+    e.preventDefault();
+    
+    const zoomFactor = e.deltaY * -0.0005; // Smaller increment for smoother zoom
+    const newScale = Math.max(minScale, Math.min(maxScale, scale + zoomFactor)); 
+
+    if (newScale !== scale) {
+        const centerX = imgX + imgWidth / 2;
+        const centerY = imgY + imgHeight / 2;
+
+        scale = newScale;
+        imgWidth = image.width * scale;
+        imgHeight = imgWidth / aspectRatio; // Maintain aspect ratio
+
+        imgX = centerX - imgWidth / 2;
+        imgY = centerY - imgHeight / 2;
+
+        drawImage();
+    }
+}
+
+  canvas.addEventListener("mousedown", onMouseDown);
+  canvas.addEventListener("mousemove", onMouseMove);
+  canvas.addEventListener("mouseup", onMouseUp);
+  canvas.addEventListener("wheel", onWheel);
+</script>
+</body>
+</html>
